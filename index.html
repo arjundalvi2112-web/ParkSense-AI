@@ -1,331 +1,687 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI Parking Finder</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: Arial, sans-serif;
-        }
+<title>AI Parking Finder</title>
 
-        body {
-            background: #f5f8ff;
-            color: #222;
-        }
-
-        header {
-            background: #0b5cff;
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
-
-        header img {
-            width: 120px;
-            margin-bottom: 10px;
-        }
-
-        header h1 {
-            font-size: 32px;
-        }
-
-        header p {
-            font-size: 16px;
-            margin-top: 8px;
-        }
-
-        .hero {
-            padding: 40px 20px;
-            text-align: center;
-        }
-
-        .hero h2 {
-            font-size: 30px;
-            color: #0b5cff;
-            margin-bottom: 15px;
-        }
-
-        .hero p {
-            font-size: 18px;
-            line-height: 1.5;
-        }
-
-        .button {
-            display: inline-block;
-            margin-top: 25px;
-            padding: 12px 25px;
-            background: #0b5cff;
-            color: white;
-            text-decoration: none;
-            border-radius: 25px;
-            font-weight: bold;
-        }
-              
-        .button:hover {
-            background: #003bb5;
-        }
-
-        .section {
-            padding: 40px 20px;
-            text-align: center;
-        }
-
-        .section h2 {
-            color: #0b5cff;
-            font-size: 28px;
-            margin-bottom: 20px;
-        }
-
-        .cards {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 20px;
-        }
-
-        .card {
-            background: white;
-            width: 280px;
-            padding: 25px;
-            border-radius: 15px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-        }
-
-        .card h3 {
-            color: #0b5cff;
-            margin-bottom: 10px;
-        }
-
-        .card p {
-            font-size: 15px;
-            line-height: 1.5;
-        }
-
-        .parking-box {
-            background: #eaf1ff;
-            padding: 30px;
-            margin: 20px auto;
-            max-width: 700px;
-            border-radius: 20px;
-        }
-
-        .parking-box input {
-            width: 80%;
-            padding: 12px;
-            border-radius: 8px;
-            border: 1px solid #ccc;
-            margin: 10px;
-            font-size: 16px;
-        }
-
-        .parking-box button {
-            padding: 12px 25px;
-            background: #0b5cff;
-            color: white;
-            border: none;
-            border-radius: 20px;
-            cursor: pointer;
-        }
-      
-        .parking-box button:hover {
-            background: #003bb5;
-        }
-
-        .stats {
-            display: flex;
-            justify-content: center;
-            gap: 30px;
-            flex-wrap: wrap;
-            margin-top: 20px;
-        }
-
-        .stat {
-            background: white;
-            padding: 20px;
-            width: 200px;
-            border-radius: 15px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-        }
-
-        .stat h3 {
-            color: #0b5cff;
-            font-size: 30px;
-        }
-
-        footer {
-            background: #111;
-            color: white;
-            text-align: center;
-            padding: 20px;
-            margin-top: 30px;
-        }
-
-        @media(max-width:600px){
-            header h1 {
-                font-size: 25px;
-            }
-
-            .hero h2 {
-                font-size: 24px;
-            }
-
-            .parking-box input {
-                width: 90%;
-            }
-        }
-
-    </style>
+<link rel="stylesheet" href="style.css">
 
 </head>
+
 
 <body>
 
 <header>
 
-    <img src="logo.png" alt="AI Parking Finder Logo">
+    <div class="nav">
 
-    <h1>AI Parking Finder</h1>
+        <img src="logo.png" class="logo" alt="AI Parking Finder">
 
-    <p>Smart Parking Solutions Powered by Artificial Intelligence</p>
+        <h1>AI Parking Finder</h1>
+
+    </div>
 
 </header>
 
 
+
 <section class="hero">
 
-    <h2>Find Parking Before You Reach</h2>
+    <div class="hero-text">
 
-    <p>
-        AI Parking Finder helps city drivers discover available parking spaces,
-        predict parking availability, and save valuable time.
-    </p>
+        <h2>
+            Find Parking Smarter With AI
+        </h2>
 
-    <a href="#search" class="button">Find Parking</a>
+        <p>
+            An intelligent parking assistant that predicts availability,
+            saves time and reduces traffic congestion.
+        </p>
 
-</section>
-
-
-<section class="section" id="search">
-
-    <h2>Search Parking</h2>
-
-    <div class="parking-box">
-
-        <input type="text" placeholder="Enter your location">
-
-        <br>
 
         <button>
-            Search Available Parking
+            Find Parking Now
         </button>
 
-        <p style="margin-top:15px;">
-            AI will suggest the nearest and best parking spots.
+    </div>
+
+
+    <div class="ai-box">
+
+        <div class="scanner"></div>
+
+        <h3>
+            🤖 AI Scanning Parking Areas...
+        </h3>
+
+        <p>
+            Checking nearby spaces
         </p>
 
     </div>
 
 </section>
 
-<section class="section">
-
-    <h2>Smart Features</h2>
-
-    <div class="cards">
-
-        <div class="card">
-            <h3>🤖 AI Prediction</h3>
-            <p>
-                Predicts parking availability using artificial intelligence
-                and past parking patterns.
-            </p>
-        </div>
 
 
-        <div class="card">
-            <h3>📍 Live Parking Data</h3>
-            <p>
-                Shows available parking spaces and helps drivers find
-                nearby locations quickly.
-            </p>
-        </div>
+<section class="search-section">
+
+<h2>Search Smart Parking</h2>
+
+<div class="search-box">
+
+<input 
+type="text"
+placeholder="Enter your location">
 
 
-        <div class="card">
-            <h3>🚗 Smart Routes</h3>
-            <p>
-                Suggests faster routes to reach parking areas and reduce
-                unnecessary driving.
-            </p>
-        </div>
+<button>
+Search
+</button>
+
+</div>
+
+</section>
+
+<section class="features">
+
+<h2>Smart AI Features</h2>
 
 
-        <div class="card">
-            <h3>💳 Easy Payments</h3>
-            <p>
-                Supports simple digital payments for a smooth parking
-                experience.
-            </p>
-        </div>
+<div class="feature-container">
 
-    </div>
+
+<div class="card">
+
+<div class="icon">
+🤖
+</div>
+
+<h3>
+AI Prediction
+</h3>
+
+<p>
+Predicts parking availability using intelligent algorithms.
+</p>
+
+</div>
+
+
+
+<div class="card">
+
+<div class="icon">
+📍
+</div>
+
+<h3>
+Live Parking
+</h3>
+
+<p>
+Find available parking spaces near your location.
+</p>
+
+</div>
+
+
+
+
+<div class="card">
+
+<div class="icon">
+🚗
+</div>
+
+<h3>
+Smart Routes
+</h3>
+
+<p>
+Suggests faster routes to reach parking spots.
+</p>
+
+</div>
+
+
+
+
+</div>
 
 </section>
 
 
-<section class="section">
 
-    <h2>Why Choose AI Parking Finder?</h2>
+<section class="parking">
 
-    <div class="stats">
-
-        <div class="stat">
-            <h3>5000+</h3>
-            <p>Users in first year</p>
-        </div>
+<h2>
+Available Parking Spots
+</h2>
 
 
-        <div class="stat">
-            <h3>95%</h3>
-            <p>Parking prediction accuracy</p>
-        </div>
+
+<div class="parking-container">
 
 
-        <div class="stat">
-            <h3>24/7</h3>
-            <p>Smart parking assistance</p>
-        </div>
+<div class="parking-card">
 
-    </div>
+<h3>
+City Mall Parking
+</h3>
+
+<p>
+📍 0.5 km away
+</p>
+
+<span>
+85% Available
+</span>
+
+</div>
+
+
+
+<div class="parking-card">
+
+<h3>
+Metro Station Parking
+</h3>
+
+<p>
+📍 1.2 km away
+</p>
+
+<span>
+60% Available
+</span>
+
+</div>
+
+
+
+
+<div class="parking-card">
+
+<h3>
+Tech Park Parking
+</h3>
+
+<p>
+📍 2 km away
+</p>
+
+<span>
+90% Available
+</span>
+
+</div>
+
+
+
+</div>
 
 </section>
 
 
-<section class="section">
 
-    <h2>Our Mission</h2>
+<section class="stats">
 
-    <p>
-        Our mission is to reduce traffic congestion by making parking
-        smarter, faster, and easier for everyone.
-    </p>
+
+<div>
+<h2>
+5000+
+</h2>
+
+<p>
+Users
+</p>
+
+</div>
+
+
+<div>
+<h2>
+95%
+</h2>
+
+<p>
+AI Accuracy
+</p>
+
+</div>
+
+
+<div>
+<h2>
+24/7
+</h2>
+
+<p>
+Support
+</p>
+
+</div>
+
 
 </section>
+
+<section class="about">
+
+<h2>
+Why AI Parking Finder?
+</h2>
+
+
+<p>
+Traditional parking wastes time and increases traffic.
+Our AI-powered system helps drivers discover,
+predict and choose the best parking spaces instantly.
+</p>
+
+
+
+<div class="about-box">
+
+
+<div>
+<h3>
+⚡ Faster Parking
+</h3>
+
+<p>
+Reduce searching time with smart suggestions.
+</p>
+</div>
+
+
+
+<div>
+<h3>
+🌱 Less Traffic
+</h3>
+
+<p>
+Lower unnecessary driving and fuel usage.
+</p>
+</div>
+
+
+
+<div>
+<h3>
+🏙️ Smart Cities
+</h3>
+
+<p>
+Helping cities become more connected and efficient.
+</p>
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+<section class="app">
+
+
+<div class="phone">
+
+<div class="screen">
+
+<h3>
+AI Parking App
+</h3>
+
+<p>
+Parking Found!
+</p>
+
+<div class="map-circle">
+
+📍
+
+</div>
+
+</div>
+
+</div>
+
+
+
+<div class="app-text">
+
+<h2>
+Your Smart Parking Assistant
+</h2>
+
+<p>
+Get parking recommendations,
+availability predictions and smart navigation
+all in one place.
+</p>
+
+
+<button>
+Download App
+</button>
+
+
+</div>
+
+
+</section>
+
 
 
 <footer>
 
-    <p>
-        © 2026 AI Parking Finder | Smart Cities Future
-    </p>
+<h3>
+AI Parking Finder
+</h3>
+
+<p>
+Smart Parking • Smart Cities • Smart Future
+</p>
+
 
 </footer>
+
+<script src="script.js"></script>
 
 </body>
 
 </html>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+
+body{
+
+    background:#06162e;
+    color:white;
+    overflow-x:hidden;
+
+}
+
+
+/* HEADER */
+
+header{
+
+    padding:20px 8%;
+    background:rgba(255,255,255,0.08);
+    backdrop-filter:blur(10px);
+
+}
+
+
+.nav{
+
+    display:flex;
+    align-items:center;
+    gap:20px;
+
+}
+
+
+.logo{
+
+    width:80px;
+    animation:logoMove 2s infinite alternate;
+
+}
+
+
+@keyframes logoMove{
+
+    from{
+        transform:translateY(0);
+    }
+
+    to{
+        transform:translateY(-10px);
+    }
+
+}
+
+
+.nav h1{
+
+    font-size:32px;
+
+}
+
+
+
+/* HERO */
+
+.hero{
+
+    min-height:80vh;
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    padding:50px 8%;
+    gap:40px;
+
+}
+
+
+.hero-text{
+
+    max-width:500px;
+    animation:slideLeft 1.5s;
+
+}
+
+
+.hero h2{
+
+    font-size:45px;
+    color:#00d9ff;
+
+}
+
+
+.hero p{
+
+    margin:20px 0;
+    line-height:1.6;
+
+}
+
+
+button{
+
+    background:#00d9ff;
+    color:#001;
+    border:none;
+    padding:15px 30px;
+    border-radius:30px;
+    cursor:pointer;
+    font-weight:bold;
+    transition:.3s;
+
+}
+
+
+button:hover{
+
+    transform:scale(1.1);
+
+}
+
+
+
+/* AI SCANNER */
+
+
+.ai-box{
+
+    width:300px;
+    height:300px;
+    background:rgba(255,255,255,.1);
+    border-radius:25px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    animation:float 3s infinite;
+
+}
+
+
+.scanner{
+
+    width:120px;
+    height:120px;
+    border:4px solid #00d9ff;
+    border-radius:50%;
+    animation:scan 2s infinite;
+
+}
+
+
+@keyframes scan{
+
+    0%{
+        transform:scale(.8);
+        opacity:.5;
+    }
+
+    50%{
+        transform:scale(1.2);
+        opacity:1;
+    }
+
+    100%{
+        transform:scale(.8);
+    }
+
+}
+
+
+@keyframes float{
+
+    50%{
+        transform:translateY(-15px);
+    }
+
+}
+
+
+@keyframes slideLeft{
+
+    from{
+        transform:translateX(-100px);
+        opacity:0;
+    }
+
+    to{
+        transform:translateX(0);
+        opacity:1;
+    }
+
+}
+
+// AI Parking Finder Interactions
+
+
+// Search button animation
+
+const searchButton = document.querySelector(".search-box button");
+
+
+if(searchButton){
+
+searchButton.addEventListener("click", function(){
+
+    alert("🤖 AI is scanning nearby parking spaces...");
+
+    setTimeout(function(){
+
+        alert("✅ Parking Found! Best spot selected.");
+
+    },1500);
+
+});
+
+}
+
+
+
+// Scroll animation
+
+const cards = document.querySelectorAll(".card, .parking-card");
+
+
+window.addEventListener("scroll",()=>{
+
+    cards.forEach(card=>{
+
+        let position = card.getBoundingClientRect().top;
+
+        let screen = window.innerHeight;
+
+
+        if(position < screen - 100){
+
+            card.style.opacity="1";
+            card.style.transform="translateY(0)";
+
+        }
+
+    });
+
+});
+
+
+
+// AI Loading Effect
+
+let messages=[
+
+"Scanning parking areas...",
+"Analyzing traffic...",
+"Predicting availability...",
+"Finding best parking spot..."
+
+];
+
+
+let index=0;
+
+
+setInterval(()=>{
+
+let aiText=document.querySelector(".ai-box h3");
+
+
+if(aiText){
+
+aiText.innerHTML="🤖 "+messages[index];
+
+index++;
+
+if(index>=messages.length){
+
+index=0;
+
+}
+
+}
+
+},2000);
