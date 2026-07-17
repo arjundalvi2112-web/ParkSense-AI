@@ -1,36 +1,28 @@
-
-// LOGIN POPUP
-
-const loginBtn = document.querySelector(".login-btn");
-const popup = document.querySelector(".login-popup");
-const closeBtn = document.querySelector(".close");
-
-
-loginBtn.addEventListener("click",()=>{
-
-popup.style.display="flex";
-
-});
+/* =========================
+   AI PARKING FINDER
+   JAVASCRIPT
+   PART 3
+========================= */
 
 
+// Smooth scrolling for navigation
 
-closeBtn.addEventListener("click",()=>{
+document.querySelectorAll("nav a").forEach(link => {
 
-popup.style.display="none";
+    link.addEventListener("click", function(e){
 
-});
+        e.preventDefault();
 
+        let target =
+        document.querySelector(this.getAttribute("href"));
 
+        target.scrollIntoView({
 
+            behavior:"smooth"
 
+        });
 
-window.addEventListener("click",(e)=>{
-
-if(e.target===popup){
-
-popup.style.display="none";
-
-}
+    });
 
 });
 
@@ -38,53 +30,18 @@ popup.style.display="none";
 
 
 
+// Button Animation
+
+const button =
+document.querySelector(".hero-text button");
 
 
-
-// BACK TO TOP BUTTON
-
-
-const topBtn=document.querySelector(".top-btn");
+button.addEventListener("click",()=>{
 
 
-topBtn.addEventListener("click",()=>{
-
-window.scrollTo({
-
-top:0,
-
-behavior:"smooth"
-
-});
-
-});
-
-
-
-
-
-
-
-// NAVBAR SCROLL EFFECT
-
-
-window.addEventListener("scroll",()=>{
-
-
-const navbar=document.querySelector(".navbar");
-
-
-if(window.scrollY>50){
-
-navbar.style.background="rgba(0,0,0,0.9)";
-
-}
-
-else{
-
-navbar.style.background="rgba(5,8,22,0.75)";
-
-}
+    alert(
+    "🚗 Searching for the nearest available parking space..."
+    );
 
 
 });
@@ -93,132 +50,15 @@ navbar.style.background="rgba(5,8,22,0.75)";
 
 
 
+// Feature cards reveal animation
 
 
+const cards =
+document.querySelectorAll(".feature-card");
 
-// PARKING SEARCH
 
-
-const searchButton=document.querySelector(".search-input button");
-
-const searchInput=document.querySelector(".search-input input");
-
-
-
-searchButton.addEventListener("click",()=>{
-
-
-if(searchInput.value===""){
-
-
-alert("Please enter your location");
-
-
-}
-
-else{
-
-
-alert(
-
-"🤖 AI found parking spots near "+searchInput.value
-
-);
-
-
-}
-
-
-
-});
-
-
-
-
-
-
-
-
-// AI CHATBOT
-
-
-const chatInput=document.querySelector(".chat-input input");
-
-const chatButton=document.querySelector(".chat-input button");
-
-const chatBody=document.querySelector(".chat-body");
-
-
-
-chatButton.addEventListener("click",()=>{
-
-
-let message=chatInput.value;
-
-
-if(message===""){
-
-return;
-
-}
-
-
-
-let userMessage=document.createElement("p");
-
-userMessage.innerHTML="You: "+message;
-
-
-chatBody.appendChild(userMessage);
-
-
-
-
-
-setTimeout(()=>{
-
-
-let botMessage=document.createElement("p");
-
-
-botMessage.innerHTML=
-
-"AI: I found the best parking options for you 🚗";
-
-
-chatBody.appendChild(botMessage);
-
-
-
-},800);
-
-
-
-chatInput.value="";
-
-
-});
-
-
-
-
-
-
-
-
-
-// FEATURE CARD ANIMATION
-
-
-const cards=document.querySelectorAll(
-
-".feature-card,.parking-card,.service-box,.review-card"
-
-);
-
-
-
-const observer=new IntersectionObserver(entries=>{
+const observer =
+new IntersectionObserver(entries=>{
 
 
 entries.forEach(entry=>{
@@ -235,12 +75,10 @@ entry.target.style.transform="translateY(0)";
 }
 
 
-
 });
 
 
 });
-
 
 
 
@@ -249,9 +87,12 @@ cards.forEach(card=>{
 
 card.style.opacity="0";
 
-card.style.transform="translateY(50px)";
+card.style.transform=
+"translateY(50px)";
 
-card.style.transition="0.8s";
+
+card.style.transition=
+"0.8s";
 
 
 observer.observe(card);
@@ -263,122 +104,92 @@ observer.observe(card);
 
 
 
+// AI Loading Simulation
 
 
+function startAI(){
 
-
-// BOOK BUTTONS
-
-
-const bookButtons=document.querySelectorAll(
-
-".parking-card button"
-
+console.log(
+"AI Parking System Activated..."
 );
 
 
+let messages=[
 
-bookButtons.forEach(button=>{
+"Scanning nearby parking areas...",
 
+"Analyzing traffic conditions...",
 
-button.addEventListener("click",()=>{
+"Predicting parking availability...",
 
-
-alert(
-
-"✅ Parking slot reserved successfully!"
-
-);
-
-
-});
-
-
-});
-
-
-
-
-
-
-
-
-
-// LIVE AI STATUS ANIMATION
-
-
-const aiCircle=document.querySelector(".ai-circle h3");
-
-
-let status=[
-
-"AI",
-
-"SCAN",
-
-"FIND",
-
-"GO"
+"Best parking location found!"
 
 ];
 
 
-let index=0;
+let i=0;
 
 
-
-setInterval(()=>{
-
-
-index++;
+let interval=setInterval(()=>{
 
 
-if(index>=status.length){
+console.log(messages[i]);
 
-index=0;
+
+i++;
+
+
+if(i>=messages.length){
+
+clearInterval(interval);
 
 }
 
 
-
-aiCircle.innerHTML=status[index];
-
-
-},2000);
+},1000);
 
 
+}
 
 
-
-
-
-
-// APP DOWNLOAD BUTTON
-
-
-const downloadBtn=document.querySelector(".download button");
-
-
-downloadBtn.addEventListener("click",()=>{
-
-
-alert(
-
-"📱 AI Parking Finder App download will start soon!"
-
-);
-
-
-});
+startAI();
 
 
 
 
 
+// Dynamic year in footer (for future)
+
+let year =
+new Date().getFullYear();
 
 
 console.log(
-
-"AI Parking Finder Website Loaded Successfully 🚗🤖"
-
+"AI Parking Finder © "+year
 );
+
+
+
+
+
+// Mouse movement glow effect
+
+
+document.addEventListener(
+"mousemove",
+(e)=>{
+
+
+let x=e.clientX;
+
+let y=e.clientY;
+
+
+document.body.style.background=
+
+`radial-gradient(circle at ${x}px ${y}px,
+rgba(0,102,255,0.08),
+#f4f8ff 300px)`;
+
+
+});
