@@ -2,13 +2,14 @@
 <html lang="en">
 
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>AI Parking Finder | Smart Parking Solution</title>
 
 <link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
 </head>
 
@@ -18,35 +19,42 @@
 
 <!-- NAVBAR -->
 
-<header class="navbar">
+<header>
 
-<div class="brand">
+<nav class="navbar">
 
-<img src="logo.png" class="logo" alt="AI Parking Finder">
+<div class="logo">
 
-<div>
+<img src="logo.png" alt="AI Parking Finder Logo">
 
-<h1>AI Parking Finder</h1>
-
-<p>Smart Parking • Smart Cities</p>
-
-</div>
+<h2>
+AI Parking Finder
+</h2>
 
 </div>
 
 
-<nav>
+<ul class="nav-links">
 
-<a href="#home">Home</a>
+<li><a href="#home">Home</a></li>
 
-<a href="#features">Features</a>
+<li><a href="#features">Features</a></li>
 
-<a href="#dashboard">Dashboard</a>
+<li><a href="#parking">Parking</a></li>
 
-<a href="#contact">Contact</a>
+<li><a href="#about">About</a></li>
+
+<li><a href="#contact">Contact</a></li>
+
+</ul>
+
+
+<button class="login-btn">
+Login
+</button>
+
 
 </nav>
-
 
 </header>
 
@@ -55,134 +63,226 @@
 
 <!-- HERO SECTION -->
 
+
 <section class="hero" id="home">
 
 
 <div class="hero-content">
 
 
-<h2>
+<h1>
+Find Parking
+<br>
 
-Find Parking Before You Reach
+<span>
+Powered By AI
+</span>
 
-</h2>
+</h1>
 
 
 <p>
 
-An AI-powered parking assistant that predicts availability,
-reduces traffic, and helps drivers find the perfect parking spot.
+AI Parking Finder helps you locate available parking spaces
+in real-time using artificial intelligence, GPS and smart predictions.
 
 </p>
 
 
-<div class="buttons">
+<div class="hero-buttons">
 
-<button class="primary">
-
-🚗 Find Parking
-
+<button class="primary-btn">
+Find Parking Now
 </button>
 
 
-<button class="secondary">
-
-Explore AI
-
+<button class="secondary-btn">
+Explore Features
 </button>
 
 </div>
 
 
-<div class="ai-status">
+
+<div class="stats">
+
+
+<div class="stat-box">
+
+<h2>
+5000+
+</h2>
+
+<p>
+Happy Users
+</p>
+
+</div>
+
+
+
+<div class="stat-box">
+
+<h2>
+100+
+</h2>
+
+<p>
+Parking Spots
+</p>
+
+</div>
+
+
+
+<div class="stat-box">
+
+<h2>
+99%
+</h2>
+
+<p>
+Accuracy
+</p>
+
+</div>
+
+
+
+</div>
+
+
+
+</div>
+
+
+
+
+
+<div class="hero-image">
+
+
+<div class="ai-circle">
 
 <div class="pulse"></div>
 
-<p>
-
-🤖 AI System Online • Scanning City Parking
-
-</p>
-
-</div>
-
-
-</div>
-
-
-
-
-<div class="hero-dashboard">
-
-
-<div class="circle">
-
-<div class="circle-inner">
-
-📍
-
-</div>
-
-</div>
-
-
-<div class="floating-card">
 
 <h3>
-
-92%
-
+AI
 </h3>
 
+
+</div>
+
+
+
+<div class="car-card">
+
+
+<div class="car-icon">
+🚗
+</div>
+
+
+<h3>
+Parking Found
+</h3>
+
+
 <p>
-
-Parking Prediction Accuracy
-
+120 meters away
 </p>
 
-</div>
-
 
 </div>
 
-<!-- AI DASHBOARD SECTION -->
 
-<section class="dashboard" id="dashboard">
+
+</div>
+
+
+
+</section>
+
+
+
+
+
+<!-- SEARCH BOX -->
+
+
+<section class="search-section">
+
+
+<div class="search-box">
 
 
 <h2>
-
-Live AI Parking Dashboard
-
+Search Nearby Parking
 </h2>
 
 
-
-<div class="dashboard-grid">
-
+<div class="search-input">
 
 
-<div class="panel">
+<input 
+type="text"
+placeholder="Enter your location..."
+>
 
 
-<h3>
+<button>
+Search
+</button>
 
-📍 Current Location
-
-</h3>
-
-
-<div class="map-box">
-
-<div class="location-dot"></div>
 
 </div>
 
 
+</div>
+
+
+</section>
+
+
+
+
+
+<!-- FEATURES START -->
+
+
+<section class="features" id="features">
+
+
+<h1>
+Smart Features
+</h1>
+
+
 <p>
+Everything you need for stress-free parking.
+</p>
 
-Pune Smart City Zone
 
+<div class="feature-container">
+
+
+
+<div class="feature-card">
+
+
+<div class="icon">
+🤖
+</div>
+
+
+<h2>
+AI Prediction
+</h2>
+
+
+<p>
+Predict parking availability before reaching your destination.
 </p>
 
 
@@ -192,329 +292,312 @@ Pune Smart City Zone
 
 
 
-<div class="panel">
+<div class="feature-card">
 
 
-<h3>
-
-🤖 AI Prediction
-
-</h3>
-
-
-<div class="prediction">
-
-
-<div class="progress">
-
-<span></span>
-
+<div class="icon">
+📍
 </div>
 
 
-<h4>
-
-87% Availability
-
-</h4>
+<h2>
+Live Location
+</h2>
 
 
 <p>
-
-High chance of parking available
-
+Find nearby parking spaces using GPS technology.
 </p>
 
 
 </div>
 
 
+
+
+
+<div class="feature-card">
+
+
+<div class="icon">
+⚡
+</div>
+
+
+<h2>
+Smart Routing
+</h2>
+
+
+<p>
+Get the fastest route to available parking.
+</p>
+
+
+</div>
+
+
+
+</div>
+  <!-- PARKING SECTION -->
+
+<section class="parking-section" id="parking">
+
+
+<h1>
+Available Parking Spots
+</h1>
+
+
+<p>
+AI detected nearby parking locations
+</p>
+
+
+
+<div class="parking-container">
+
+
+
+<div class="parking-card">
+
+
+<div class="parking-image">
+
+🚘
+
+</div>
+
+
+<h2>
+City Mall Parking
+</h2>
+
+
+<p>
+📍 200 meters away
+</p>
+
+
+<div class="availability">
+
+<span>
+Available
+</span>
+
+</div>
+
+
+<h3>
+₹40/hour
+</h3>
+
+
+<button>
+Book Now
+</button>
+
+
 </div>
 
 
 
 
 
-<div class="panel">
+<div class="parking-card">
+
+
+<div class="parking-image">
+
+🏢
+
+</div>
+
+
+<h2>
+Metro Station Parking
+</h2>
+
+
+<p>
+📍 500 meters away
+</p>
+
+
+<div class="availability">
+
+<span>
+Available
+</span>
+
+</div>
 
 
 <h3>
-
-🚗 Nearby Parking
-
+₹30/hour
 </h3>
 
 
-<ul class="parking-list">
+<button>
+Book Now
+</button>
 
+
+</div>
+
+
+
+
+
+<div class="parking-card">
+
+
+<div class="parking-image">
+
+🏬
+
+</div>
+
+
+<h2>
+Business Hub Parking
+</h2>
+
+
+<p>
+📍 750 meters away
+</p>
+
+
+<div class="availability busy">
+
+<span>
+Almost Full
+</span>
+
+</div>
+
+
+<h3>
+₹50/hour
+</h3>
+
+
+<button>
+Book Now
+</button>
+
+
+</div>
+
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+<!-- AI MAP SECTION -->
+
+
+<section class="map-section">
+
+
+<div class="map-content">
+
+
+<h1>
+AI Smart Parking Map
+</h1>
+
+
+<p>
+
+Our intelligent system analyses traffic,
+parking history and user activity to suggest
+the best parking location.
+
+</p>
+
+
+
+<ul>
 
 <li>
-
-City Mall
-<span>85%</span>
-
+✔ Real-time parking updates
 </li>
 
 
 <li>
-
-Metro Station
-<span>70%</span>
-
+✔ Traffic prediction
 </li>
 
 
 <li>
+✔ Route optimization
+</li>
 
-Tech Park
-<span>92%</span>
 
+<li>
+✔ Digital payments
 </li>
 
 
 </ul>
 
 
-</div>
 
-
-
-</div>
-
-
-</section>
-
-
-
-
-
-<!-- FEATURES -->
-
-<section class="features" id="features">
-
-
-<h2>
-
-Powerful AI Features
-
-</h2>
-
-
-
-<div class="feature-grid">
-
-
-
-<div class="feature-card">
-
-
-<div class="feature-icon">
-
-🤖
-
-</div>
-
-
-<h3>
-
-AI Prediction
-
-</h3>
-
-
-<p>
-
-Predicts parking availability using smart data analysis.
-
-</p>
-
-
-</div>
-
-
-
-
-
-<div class="feature-card">
-
-
-<div class="feature-icon">
-
-🛰️
-
-</div>
-
-
-<h3>
-
-Live Tracking
-
-</h3>
-
-
-<p>
-
-Find nearby parking spaces instantly.
-
-</p>
-
-
-</div>
-
-
-
-
-
-<div class="feature-card">
-
-
-<div class="feature-icon">
-
-🛣️
-
-</div>
-
-
-<h3>
-
-Smart Navigation
-
-</h3>
-
-
-<p>
-
-Suggests the fastest route to parking locations.
-
-</p>
-
-
-</div>
-
-
-
-
-<div class="feature-card">
-
-
-<div class="feature-icon">
-
-🔐
-
-</div>
-
-
-<h3>
-
-Secure Booking
-
-</h3>
-
-
-<p>
-
-Reserve parking spots safely.
-
-</p>
-
-
-</div>
-
-
-
-</div>
-
-
-</section>
-
-<!-- SMART BOOKING SECTION -->
-
-<section class="booking">
-
-
-<div class="booking-box">
-
-
-<h2>
-
-Reserve Your Parking Spot
-
-</h2>
-
-
-<p>
-
-Choose a location and let AI find the best available space.
-
-</p>
-
-
-
-<div class="booking-form">
-
-
-<div class="input-box">
-
-<label>
-
-Location
-
-</label>
-
-<input 
-type="text"
-placeholder="Enter destination">
-
-</div>
-
-
-
-<div class="input-box">
-
-<label>
-
-Vehicle
-
-</label>
-
-<select>
-
-<option>Car</option>
-
-<option>Bike</option>
-
-<option>Electric Vehicle</option>
-
-</select>
-
-</div>
-
-
-
-
-<div class="input-box">
-
-<label>
-
-Time
-
-</label>
-
-<input 
-type="time">
-
-</div>
-
-
-
-<button class="primary">
-
-Search Parking
-
+<button class="primary-btn">
+Open Smart Map
 </button>
 
 
+</div>
 
+
+
+
+<div class="map-box">
+
+
+<div class="road road1"></div>
+
+<div class="road road2"></div>
+
+<div class="road road3"></div>
+
+
+
+<div class="location-pin pin1">
+📍
+</div>
+
+
+<div class="location-pin pin2">
+📍
+</div>
+
+
+<div class="location-pin pin3">
+📍
+</div>
+
+
+
+<div class="car car1">
+🚗
+</div>
+
+
+<div class="car car2">
+🚙
 </div>
 
 
@@ -527,228 +610,782 @@ Search Parking
 
 
 
-<!-- STATISTICS -->
-
-<section class="stats">
 
 
-<div class="stat-card">
+
+<!-- ABOUT SECTION -->
+
+
+<section class="about" id="about">
+
+
+<div class="about-image">
+
+
+<div class="ai-box">
 
 <h2>
-
-50K+
-
+AI+
 </h2>
 
 <p>
-
-Smart Users
-
+Parking Intelligence
 </p>
 
 </div>
 
 
-
-<div class="stat-card">
-
-<h2>
-
-10K+
-
-</h2>
-
-<p>
-
-Parking Spots
-
-</p>
-
 </div>
 
 
 
-<div class="stat-card">
 
-<h2>
+<div class="about-content">
 
-95%
 
-</h2>
+<h1>
+About AI Parking Finder
+</h1>
+
+
 
 <p>
 
-AI Accuracy
+AI Parking Finder is a next-generation smart parking
+solution designed to reduce traffic congestion and save
+valuable time.
 
 </p>
 
-</div>
 
-
-
-<div class="stat-card">
-
-<h2>
-
-24/7
-
-</h2>
 
 <p>
 
-AI Support
+Using artificial intelligence, GPS and real-time data,
+our platform helps drivers find the perfect parking spot
+before they even reach their destination.
 
 </p>
 
-</div>
 
 
-</section>
+<div class="about-points">
 
 
-
-
-
-<!-- AI ASSISTANT -->
-
-
-<section class="assistant">
-
-
-<div class="assistant-box">
-
-
-<div class="robot">
-
-🤖
-
+<div>
+⭐ AI Powered System
 </div>
 
 
 <div>
-
-<h2>
-
-AI Parking Assistant
-
-</h2>
+⭐ Faster Parking Experience
+</div>
 
 
-<p id="ai-message">
-
-Hello! I can help you find the best parking spot.
-
-</p>
-
-
-<button id="ask-ai">
-
-Ask AI
-
-</button>
+<div>
+⭐ Eco Friendly Solution
+</div>
 
 
 </div>
+
+
+
+</div>
+
+
+
+</section>
+  <!-- SERVICES SECTION -->
+
+<section class="services">
+
+<h1>
+Why Choose AI Parking Finder?
+</h1>
+
+<p>
+Advanced technology for a smarter parking future.
+</p>
+
+
+<div class="service-grid">
+
+
+<div class="service-box">
+
+<div class="service-icon">
+🧠
+</div>
+
+<h2>
+Artificial Intelligence
+</h2>
+
+<p>
+Our AI system studies parking patterns and predicts
+availability before you arrive.
+</p>
+
+</div>
+
+
+
+
+<div class="service-box">
+
+<div class="service-icon">
+🌐
+</div>
+
+<h2>
+Real Time Data
+</h2>
+
+<p>
+Get live updates from connected parking locations
+around your city.
+</p>
+
+</div>
+
+
+
+
+<div class="service-box">
+
+<div class="service-icon">
+🔒
+</div>
+
+<h2>
+Secure Booking
+</h2>
+
+<p>
+Reserve your parking slot safely with digital payments.
+</p>
+
+</div>
+
+
+
+
+<div class="service-box">
+
+<div class="service-icon">
+📱
+</div>
+
+<h2>
+Mobile Friendly
+</h2>
+
+<p>
+Access parking information anywhere anytime.
+</p>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+
+
+
+
+
+<!-- PROCESS SECTION -->
+
+
+<section class="process">
+
+
+<h1>
+How It Works
+</h1>
+
+
+<div class="process-container">
+
+
+
+<div class="step">
+
+
+<div class="number">
+01
+</div>
+
+
+<h2>
+Search Location
+</h2>
+
+
+<p>
+Enter your destination and find nearby parking areas.
+</p>
+
+
+</div>
+
+
+
+
+<div class="step">
+
+
+<div class="number">
+02
+</div>
+
+
+<h2>
+AI Analysis
+</h2>
+
+
+<p>
+Our AI checks availability, distance and traffic.
+</p>
+
+
+</div>
+
+
+
+
+<div class="step">
+
+
+<div class="number">
+03
+</div>
+
+
+<h2>
+Book Slot
+</h2>
+
+
+<p>
+Select your preferred parking space instantly.
+</p>
+
+
+</div>
+
+
+
+
+<div class="step">
+
+
+<div class="number">
+04
+</div>
+
+
+<h2>
+Park Easily
+</h2>
+
+
+<p>
+Follow navigation and enjoy stress-free parking.
+</p>
+
+
+</div>
+
 
 
 </div>
 
 
 </section>
-  
-<!-- APP PREVIEW SECTION -->
-
-<section class="app-section">
 
 
-<div class="app-image">
+
+
+
+
+
+
+<!-- PRICING SECTION -->
+
+
+<section class="pricing">
+
+
+<h1>
+Simple Pricing Plans
+</h1>
+
+
+<p>
+Choose the plan that fits your parking needs.
+</p>
+
+
+
+<div class="pricing-container">
+
+
+
+
+
+<div class="price-card">
+
+
+<h2>
+Basic
+</h2>
+
+
+<h1>
+₹0
+</h1>
+
+
+<p>
+Free Forever
+</p>
+
+
+<ul>
+
+<li>
+✔ Search Parking
+</li>
+
+<li>
+✔ Basic Navigation
+</li>
+
+<li>
+✔ Limited AI Suggestions
+</li>
+
+</ul>
+
+
+<button>
+Get Started
+</button>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="price-card popular">
+
+
+<div class="badge">
+POPULAR
+</div>
+
+
+<h2>
+Smart
+</h2>
+
+
+<h1>
+₹99
+</h1>
+
+
+<p>
+Per Month
+</p>
+
+
+<ul>
+
+<li>
+✔ Unlimited Search
+</li>
+
+<li>
+✔ AI Predictions
+</li>
+
+<li>
+✔ Priority Booking
+</li>
+
+<li>
+✔ Digital Payments
+</li>
+
+</ul>
+
+
+<button>
+Choose Plan
+</button>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="price-card">
+
+
+<h2>
+Business
+</h2>
+
+
+<h1>
+₹499
+</h1>
+
+
+<p>
+Per Month
+</p>
+
+
+<ul>
+
+<li>
+✔ Parking Management
+</li>
+
+<li>
+✔ Analytics Dashboard
+</li>
+
+<li>
+✔ Multiple Locations
+</li>
+
+</ul>
+
+
+<button>
+Contact Us
+</button>
+
+
+</div>
+
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+<!-- TESTIMONIAL SECTION -->
+
+
+<section class="reviews">
+
+
+<h1>
+What Users Say
+</h1>
+
+
+<div class="review-container">
+
+
+
+<div class="review-card">
+
+
+<div class="profile">
+👨
+</div>
+
+
+<h2>
+Rahul Sharma
+</h2>
+
+
+<div class="stars">
+⭐⭐⭐⭐⭐
+</div>
+
+
+<p>
+
+"AI Parking Finder saved me 20 minutes every day.
+Finding parking is now simple."
+
+</p>
+
+
+</div>
+
+
+
+
+
+<div class="review-card">
+
+
+<div class="profile">
+👩
+</div>
+
+
+<h2>
+Priya Mehta
+</h2>
+
+
+<div class="stars">
+⭐⭐⭐⭐⭐
+</div>
+
+
+<p>
+
+"The AI prediction feature is amazing.
+I know where parking is available before reaching."
+
+</p>
+
+
+</div>
+
+
+
+
+
+<div class="review-card">
+
+
+<div class="profile">
+👨
+</div>
+
+
+<h2>
+Amit Patil
+</h2>
+
+
+<div class="stars">
+⭐⭐⭐⭐
+</div>
+
+
+<p>
+
+"Very useful app for crowded cities.
+The smart routes save a lot of time."
+
+</p>
+
+
+</div>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+<!-- APP DOWNLOAD SECTION -->
+
+
+<section class="download">
+
+
+<div class="download-content">
+
+
+<h1>
+Parking In Your Pocket
+</h1>
+
+
+<p>
+
+Download AI Parking Finder and experience
+the future of smart mobility.
+
+</p>
+
+
+<button>
+Download App
+</button>
+
+
+</div>
+
 
 
 <div class="phone">
 
 
-<div class="phone-top"></div>
-
-
-<div class="app-screen">
-
-
-<h3>
-
-AI Parking
-
-</h3>
-
-
-<div class="mini-map">
-
-📍
-
-</div>
-
-
-
-<div class="mini-card">
-
-Parking Found
-
-<br>
-
-⭐ 4.8 Rating
-
-</div>
-
-
-</div>
-
-
-</div>
-
-
-</div>
-
-
-
-
-
-<div class="app-content">
+<div class="screen">
 
 
 <h2>
-
-Your Future Parking Experience
-
+AI Parking
 </h2>
 
 
+<div class="mini-map">
+📍🚗📍
+</div>
+
+
 <p>
+Parking Found
+</p>
 
-One intelligent platform for finding, booking,
-and managing parking spaces.
 
+</div>
+
+
+</div>
+
+
+
+</section>
+  <!-- CONTACT SECTION -->
+
+<section class="contact" id="contact">
+
+
+<div class="contact-container">
+
+
+<div class="contact-info">
+
+
+<h1>
+Contact AI Parking Finder
+</h1>
+
+
+<p>
+Have questions or want to partner with us?
+Our team is ready to help.
 </p>
 
 
 
-<div class="check-list">
+<div class="contact-item">
+
+<span>
+📧
+</span>
+
+<p>
+support@aiparkingfinder.com
+</p>
+
+</div>
 
 
-<p>✅ Real-time parking information</p>
 
-<p>✅ AI-based predictions</p>
 
-<p>✅ Digital booking</p>
+<div class="contact-item">
 
-<p>✅ Smart route suggestions</p>
+<span>
+📞
+</span>
+
+<p>
++91 98765 43210
+</p>
+
+</div>
+
+
+
+
+<div class="contact-item">
+
+<span>
+📍
+</span>
+
+<p>
+Smart City Innovation Hub
+</p>
+
+</div>
+
 
 
 </div>
 
 
-<button class="primary">
 
-Get Started
 
+
+<div class="contact-form">
+
+
+<input 
+type="text"
+placeholder="Your Name"
+>
+
+
+
+<input 
+type="email"
+placeholder="Your Email"
+>
+
+
+
+<input 
+type="text"
+placeholder="Phone Number"
+>
+
+
+
+<textarea 
+placeholder="Your Message">
+</textarea>
+
+
+
+<button>
+Send Message
 </button>
 
 
@@ -756,192 +1393,120 @@ Get Started
 
 
 
-</section>
-
-
-
-
-
-<!-- REVIEWS -->
-
-<section class="reviews">
-
-
-<h2>
-
-What Users Say
-
-</h2>
-
-
-
-<div class="review-grid">
-
-
-<div class="review-card">
-
-
-<h3>
-
-⭐⭐⭐⭐⭐
-
-</h3>
-
-
-<p>
-
-"Finding parking in the city is now much easier."
-
-</p>
-
-
-<h4>
-
-- Rahul
-
-</h4>
-
-
-</div>
-
-
-
-
-
-<div class="review-card">
-
-
-<h3>
-
-⭐⭐⭐⭐⭐
-
-</h3>
-
-
-<p>
-
-"The AI prediction saves me a lot of time."
-
-</p>
-
-
-<h4>
-
-- Priya
-
-</h4>
-
-
-</div>
-
-
-
-
-<div class="review-card">
-
-
-<h3>
-
-⭐⭐⭐⭐⭐
-
-</h3>
-
-
-<p>
-
-"Amazing smart city solution."
-
-</p>
-
-
-<h4>
-
-- Arjun
-
-</h4>
-
-
-</div>
-
-
-
 </div>
 
 
 </section>
-  
-<!-- CONTACT SECTION -->
 
-<section class="contact" id="contact">
+
+
+
+
+
+
+
+
+<!-- FAQ SECTION -->
+
+
+<section class="faq">
+
+
+<h1>
+Frequently Asked Questions
+</h1>
+
+
+
+<div class="faq-container">
+
+
+
+<div class="faq-box">
 
 
 <h2>
-
-Connect With AI Parking Finder
-
+How does AI Parking Finder work?
 </h2>
 
 
 <p>
 
-Making cities smarter, cleaner and easier to navigate.
+The app uses AI, GPS and parking data to
+find available parking spaces near you.
 
 </p>
 
-
-
-<div class="contact-box">
-
-
-<div>
-
-<h3>
-
-📧 Email
-
-</h3>
-
-<p>
-
-support@aiparkingfinder.com
-
-</p>
 
 </div>
 
 
 
-<div>
 
-<h3>
 
-📍 Location
 
-</h3>
+<div class="faq-box">
+
+
+<h2>
+Can I reserve a parking spot?
+</h2>
+
 
 <p>
 
-Smart City Network
+Yes, users can book available parking spaces
+through the application.
 
 </p>
+
 
 </div>
 
 
 
-<div>
 
-<h3>
 
-🚗 Service
 
-</h3>
+
+<div class="faq-box">
+
+
+<h2>
+Does it work in cities?
+</h2>
+
 
 <p>
 
-AI Smart Parking
+Yes, it is designed especially for crowded
+urban areas.
 
 </p>
+
+
+</div>
+
+
+
+
+
+
+<div class="faq-box">
+
+
+<h2>
+Is payment secure?
+</h2>
+
+
+<p>
+
+All payments are protected using secure
+digital payment systems.
+
+</p>
+
 
 </div>
 
@@ -951,6 +1516,128 @@ AI Smart Parking
 
 
 </section>
+
+
+
+
+
+
+
+
+<!-- AI CHATBOT -->
+
+
+<div class="chatbot">
+
+
+<div class="chat-header">
+
+🤖 AI Assistant
+
+</div>
+
+
+
+<div class="chat-body">
+
+
+<p>
+Hello! 👋
+</p>
+
+
+<p>
+Need help finding parking?
+</p>
+
+
+</div>
+
+
+
+<div class="chat-input">
+
+
+<input 
+placeholder="Ask something..."
+>
+
+
+<button>
+➤
+</button>
+
+
+</div>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<!-- LOGIN POPUP -->
+
+
+<div class="login-popup" id="loginPopup">
+
+
+<div class="login-box">
+
+
+<span class="close">
+×
+</span>
+
+
+<h1>
+Welcome Back
+</h1>
+
+
+
+<input 
+type="email"
+placeholder="Email"
+>
+
+
+
+<input 
+type="password"
+placeholder="Password"
+>
+
+
+
+<button>
+Login
+</button>
+
+
+
+<p>
+Don't have an account?
+<a href="#">
+Register
+</a>
+</p>
+
+
+
+</div>
+
+
+</div>
+
+
+
 
 
 
@@ -958,49 +1645,141 @@ AI Smart Parking
 
 <!-- FOOTER -->
 
+
 <footer>
+
+
+<div class="footer-container">
 
 
 <div class="footer-logo">
 
 
-<img src="logo.png" alt="AI Parking Finder">
+<img src="logo.png">
 
 
 <h2>
-
 AI Parking Finder
-
 </h2>
 
 
-</div>
-
-
-
 <p>
-
-© 2026 AI Parking Finder.
-Building the future of smart mobility.
-
+Smart parking powered by artificial intelligence.
 </p>
 
 
+</div>
 
-<div class="social">
 
 
-<span>Instagram</span>
 
-<span>LinkedIn</span>
 
-<span>Twitter</span>
+
+<div class="footer-links">
+
+
+<h2>
+Quick Links
+</h2>
+
+
+<a href="#home">
+Home
+</a>
+
+
+<a href="#features">
+Features
+</a>
+
+
+<a href="#parking">
+Parking
+</a>
+
+
+<a href="#contact">
+Contact
+</a>
 
 
 </div>
 
 
+
+
+
+
+
+<div class="footer-links">
+
+
+<h2>
+Social
+</h2>
+
+
+<a href="#">
+Instagram
+</a>
+
+
+<a href="#">
+LinkedIn
+</a>
+
+
+<a href="#">
+Twitter
+</a>
+
+
+<a href="#">
+Facebook
+</a>
+
+
+</div>
+
+
+
+
+</div>
+
+
+
+
+
+<div class="copyright">
+
+
+<p>
+© 2026 AI Parking Finder. All Rights Reserved.
+</p>
+
+
+</div>
+
+
+
 </footer>
+
+
+
+
+
+
+
+
+<!-- BACK TO TOP BUTTON -->
+
+
+<button class="top-btn">
+
+↑
+
+</button>
+
 
 
 
@@ -1010,1289 +1789,9 @@ Building the future of smart mobility.
 
 </body>
 
+
 </html>
 
+
+
 </section>
-
-
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:'Segoe UI',Arial,sans-serif;
-}
-
-
-html{
-scroll-behavior:smooth;
-}
-
-
-body{
-
-background:
-linear-gradient(135deg,#020617,#082f49,#00111f);
-
-color:white;
-
-overflow-x:hidden;
-
-}
-
-
-
-/* NAVBAR */
-
-.navbar{
-
-width:100%;
-padding:20px 7%;
-
-display:flex;
-justify-content:space-between;
-align-items:center;
-
-background:rgba(255,255,255,0.08);
-
-backdrop-filter:blur(15px);
-
-position:sticky;
-
-top:0;
-
-z-index:10;
-
-}
-
-
-.brand{
-
-display:flex;
-
-align-items:center;
-
-gap:15px;
-
-}
-
-
-.logo{
-
-width:75px;
-
-animation:logoFloat 3s infinite ease-in-out;
-
-}
-
-
-
-@keyframes logoFloat{
-
-0%,100%{
-
-transform:translateY(0);
-
-}
-
-50%{
-
-transform:translateY(-12px);
-
-}
-
-}
-
-
-
-.brand h1{
-
-font-size:28px;
-
-color:#22d3ee;
-
-}
-
-
-
-.brand p{
-
-font-size:12px;
-
-color:#cbd5e1;
-
-}
-
-
-
-nav a{
-
-color:white;
-
-text-decoration:none;
-
-margin:15px;
-
-transition:.3s;
-
-}
-
-
-nav a:hover{
-
-color:#22d3ee;
-
-}
-
-
-
-
-/* HERO */
-
-
-.hero{
-
-min-height:90vh;
-
-display:flex;
-
-justify-content:space-around;
-
-align-items:center;
-
-padding:50px 8%;
-
-gap:40px;
-
-}
-
-
-
-.hero-content{
-
-max-width:600px;
-
-animation:slide 1.5s;
-
-}
-
-
-
-.hero h2{
-
-font-size:55px;
-
-background:linear-gradient(90deg,#22d3ee,#38bdf8);
-
--webkit-background-clip:text;
-
-color:transparent;
-
-}
-
-
-
-.hero p{
-
-margin:25px 0;
-
-font-size:18px;
-
-line-height:1.7;
-
-color:#dbeafe;
-
-}
-
-
-
-.buttons{
-
-display:flex;
-
-gap:20px;
-
-}
-
-
-
-button{
-
-padding:15px 30px;
-
-border:none;
-
-border-radius:30px;
-
-font-weight:bold;
-
-cursor:pointer;
-
-transition:.4s;
-
-}
-
-
-
-.primary{
-
-background:#22d3ee;
-
-color:#001;
-
-}
-
-
-
-.secondary{
-
-background:transparent;
-
-border:2px solid #22d3ee;
-
-color:white;
-
-}
-
-
-
-button:hover{
-
-transform:scale(1.1);
-
-box-shadow:0 0 25px #22d3ee;
-
-}
-
-
-
-/* AI STATUS */
-
-
-.ai-status{
-
-margin-top:35px;
-
-display:flex;
-
-align-items:center;
-
-gap:12px;
-
-}
-
-
-.pulse{
-
-width:15px;
-
-height:15px;
-
-background:#22c55e;
-
-border-radius:50%;
-
-animation:pulse 1.5s infinite;
-
-}
-
-
-
-@keyframes pulse{
-
-50%{
-
-transform:scale(1.8);
-
-opacity:.4;
-
-}
-
-}
-
-
-
-/* HERO DASHBOARD */
-
-
-.hero-dashboard{
-
-position:relative;
-
-}
-
-
-.circle{
-
-width:300px;
-
-height:300px;
-
-border-radius:50%;
-
-background:
-conic-gradient(#22d3ee,#2563eb,#22d3ee);
-
-display:flex;
-
-align-items:center;
-
-justify-content:center;
-
-animation:rotate 8s linear infinite;
-
-}
-
-
-
-.circle-inner{
-
-width:240px;
-
-height:240px;
-
-border-radius:50%;
-
-background:#020617;
-
-display:flex;
-
-align-items:center;
-
-justify-content:center;
-
-font-size:70px;
-
-}
-
-
-
-@keyframes rotate{
-
-100%{
-
-transform:rotate(360deg);
-
-}
-
-}
-
-
-
-.floating-card{
-
-position:absolute;
-
-right:-40px;
-
-bottom:20px;
-
-background:rgba(255,255,255,.1);
-
-padding:20px;
-
-border-radius:20px;
-
-backdrop-filter:blur(10px);
-
-animation:floating 3s infinite;
-
-}
-
-
-@keyframes floating{
-
-50%{
-
-transform:translateY(-15px);
-
-}
-  
-/* DASHBOARD */
-
-
-.dashboard,
-.features,
-.booking,
-.stats,
-.assistant,
-.app-section,
-.reviews,
-.contact{
-
-padding:80px 8%;
-
-}
-
-
-
-section h2{
-
-text-align:center;
-
-font-size:38px;
-
-margin-bottom:45px;
-
-color:#22d3ee;
-
-}
-
-
-
-
-
-.dashboard-grid{
-
-display:grid;
-
-grid-template-columns:repeat(3,1fr);
-
-gap:25px;
-
-}
-
-
-
-.panel{
-
-background:rgba(255,255,255,.08);
-
-padding:30px;
-
-border-radius:25px;
-
-backdrop-filter:blur(15px);
-
-transition:.4s;
-
-}
-
-
-
-.panel:hover{
-
-transform:translateY(-15px);
-
-box-shadow:0 0 30px rgba(34,211,238,.4);
-
-}
-
-
-
-
-.map-box{
-
-height:170px;
-
-background:
-linear-gradient(45deg,#0f172a,#164e63);
-
-border-radius:20px;
-
-margin:20px 0;
-
-position:relative;
-
-}
-
-
-
-.location-dot{
-
-width:25px;
-
-height:25px;
-
-background:#22d3ee;
-
-border-radius:50%;
-
-position:absolute;
-
-top:70px;
-
-left:80px;
-
-animation:pulse 2s infinite;
-
-}
-
-
-
-
-.progress{
-
-height:15px;
-
-background:#334155;
-
-border-radius:20px;
-
-overflow:hidden;
-
-margin:20px 0;
-
-}
-
-
-
-.progress span{
-
-display:block;
-
-height:100%;
-
-width:87%;
-
-background:#22d3ee;
-
-animation:load 2s;
-
-}
-
-
-
-@keyframes load{
-
-from{
-
-width:0;
-
-}
-
-}
-
-
-
-
-.parking-list{
-
-list-style:none;
-
-}
-
-
-
-.parking-list li{
-
-background:rgba(255,255,255,.1);
-
-padding:15px;
-
-margin:10px 0;
-
-border-radius:15px;
-
-display:flex;
-
-justify-content:space-between;
-
-}
-
-
-
-.parking-list span{
-
-color:#22c55e;
-
-}
-
-
-
-/* FEATURES */
-
-
-.feature-grid{
-
-display:grid;
-
-grid-template-columns:repeat(4,1fr);
-
-gap:20px;
-
-}
-
-
-
-.feature-card{
-
-background:rgba(255,255,255,.08);
-
-padding:30px;
-
-border-radius:25px;
-
-text-align:center;
-
-transition:.4s;
-
-}
-
-
-
-.feature-card:hover{
-
-transform:scale(1.08);
-
-background:rgba(34,211,238,.15);
-
-}
-
-
-
-.feature-icon{
-
-font-size:50px;
-
-margin-bottom:20px;
-
-}
-
-
-
-
-
-/* BOOKING */
-
-
-.booking-box{
-
-background:rgba(255,255,255,.08);
-
-padding:40px;
-
-border-radius:30px;
-
-backdrop-filter:blur(15px);
-
-}
-
-
-
-.booking-form{
-
-display:flex;
-
-gap:20px;
-
-flex-wrap:wrap;
-
-justify-content:center;
-
-margin-top:30px;
-
-}
-
-
-
-.input-box{
-
-display:flex;
-
-flex-direction:column;
-
-gap:8px;
-
-}
-
-
-
-input,
-select{
-
-padding:15px;
-
-border-radius:15px;
-
-border:none;
-
-background:#e2e8f0;
-
-}
-
-
-
-/* STATISTICS */
-
-
-.stats{
-
-display:grid;
-
-grid-template-columns:repeat(4,1fr);
-
-gap:20px;
-
-text-align:center;
-
-}
-
-
-
-.stat-card{
-
-background:rgba(255,255,255,.08);
-
-padding:35px;
-
-border-radius:25px;
-
-transition:.4s;
-
-}
-
-
-
-.stat-card:hover{
-
-transform:translateY(-10px);
-
-box-shadow:0 0 25px #22d3ee;
-
-}
-
-
-
-.stat-card h2{
-
-font-size:45px;
-
-margin:0;
-
-}
-
-
-
-/* AI ASSISTANT */
-
-
-.assistant-box{
-
-display:flex;
-
-align-items:center;
-
-justify-content:center;
-
-gap:30px;
-
-background:rgba(255,255,255,.08);
-
-padding:40px;
-
-border-radius:30px;
-
-}
-
-
-
-.robot{
-
-font-size:80px;
-
-animation:floating 3s infinite;
-
-}
-
-
-
-/* APP SECTION */
-
-
-.app-section{
-
-display:flex;
-
-align-items:center;
-
-justify-content:center;
-
-gap:80px;
-
-}
-
-
-
-.phone{
-
-width:280px;
-
-height:520px;
-
-border:8px solid #22d3ee;
-
-border-radius:40px;
-
-padding:20px;
-
-background:#020617;
-
-animation:floating 3s infinite;
-
-}
-
-
-
-.app-screen{
-
-height:100%;
-
-background:linear-gradient(#0f172a,#164e63);
-
-border-radius:30px;
-
-padding:25px;
-
-text-align:center;
-
-}
-
-
-
-.mini-map{
-
-height:200px;
-
-margin-top:30px;
-
-border-radius:25px;
-
-background:#082f49;
-
-display:flex;
-
-align-items:center;
-
-justify-content:center;
-
-font-size:60px;
-
-}
-
-
-
-.mini-card{
-
-margin-top:30px;
-
-padding:20px;
-
-background:rgba(255,255,255,.1);
-
-border-radius:20px;
-
-}
-
-
-
-.app-content{
-
-max-width:450px;
-
-}
-
-
-
-.check-list p{
-
-margin:15px 0;
-
-}
-
-
-
-
-/* REVIEWS */
-
-
-.review-grid{
-
-display:grid;
-
-grid-template-columns:repeat(3,1fr);
-
-gap:25px;
-
-}
-
-
-
-.review-card{
-
-background:rgba(255,255,255,.08);
-
-padding:30px;
-
-border-radius:25px;
-
-transition:.4s;
-
-}
-
-
-
-.review-card:hover{
-
-transform:translateY(-10px);
-
-}
-
-
-
-
-/* CONTACT */
-
-
-.contact-box{
-
-display:flex;
-
-justify-content:center;
-
-gap:30px;
-
-flex-wrap:wrap;
-
-}
-
-
-
-.contact-box div{
-
-background:rgba(255,255,255,.08);
-
-padding:25px;
-
-border-radius:20px;
-
-}
-
-
-
-/* FOOTER */
-
-
-footer{
-
-text-align:center;
-
-padding:40px;
-
-background:#020617;
-
-}
-
-
-
-.footer-logo img{
-
-width:80px;
-
-}
-
-
-
-
-/* ANIMATION */
-
-
-@keyframes slide{
-
-from{
-
-opacity:0;
-
-transform:translateX(-80px);
-
-}
-
-to{
-
-opacity:1;
-
-transform:translateX(0);
-
-}
-
-}
-
-
-
-
-
-/* MOBILE DESIGN */
-
-
-@media(max-width:900px){
-
-
-.navbar,
-.hero,
-.app-section{
-
-flex-direction:column;
-
-}
-
-
-
-nav{
-
-display:none;
-
-}
-
-
-.hero h2{
-
-font-size:38px;
-
-}
-
-
-.dashboard-grid,
-.feature-grid,
-.stats,
-.review-grid{
-
-grid-template-columns:1fr;
-
-}
-
-
-.circle{
-
-width:230px;
-
-height:230px;
-
-}
-
-
-.circle-inner{
-
-width:180px;
-
-height:180px;
-
-}
-
-
-}
-
-
-
-}
-
-// AI Parking Finder Pro
-// Interactive AI Effects
-
-
-// AI Assistant
-
-const askButton = document.getElementById("ask-ai");
-
-const message = document.getElementById("ai-message");
-
-
-const aiReplies = [
-
-"🤖 I found 12 parking spaces near you.",
-
-"🚗 Best option: City Mall Parking with 92% availability.",
-
-"📍 Route optimized. Estimated arrival: 5 minutes.",
-
-"⚡ AI prediction completed successfully."
-
-];
-
-
-let replyIndex = 0;
-
-
-if(askButton){
-
-askButton.addEventListener("click",()=>{
-
-
-message.innerHTML = aiReplies[replyIndex];
-
-
-replyIndex++;
-
-
-if(replyIndex >= aiReplies.length){
-
-replyIndex = 0;
-
-}
-
-
-});
-
-}
-
-
-
-
-// Smooth button interaction
-
-
-const buttons = document.querySelectorAll("button");
-
-
-buttons.forEach(button=>{
-
-
-button.addEventListener("click",()=>{
-
-
-button.style.transform="scale(0.95)";
-
-
-setTimeout(()=>{
-
-button.style.transform="scale(1)";
-
-},150);
-
-
-});
-
-
-});
-
-
-
-
-
-// Scroll reveal animation
-
-
-const animatedElements = document.querySelectorAll(
-
-".panel, .feature-card, .stat-card, .review-card"
-
-);
-
-
-
-const observer = new IntersectionObserver((entries)=>{
-
-
-entries.forEach(entry=>{
-
-
-if(entry.isIntersecting){
-
-
-entry.target.style.opacity="1";
-
-entry.target.style.transform="translateY(0)";
-
-
-}
-
-
-});
-
-
-});
-
-
-
-animatedElements.forEach(element=>{
-
-
-element.style.opacity="0";
-
-element.style.transform="translateY(40px)";
-
-element.style.transition="1s";
-
-
-observer.observe(element);
-
-
-});
-
-
-
-
-
-// Fake live parking update
-
-
-const availability = document.querySelector(".progress span");
-
-
-let percent = 87;
-
-
-setInterval(()=>{
-
-
-percent += Math.floor(Math.random()*3)-1;
-
-
-if(percent > 98){
-
-percent = 98;
-
-}
-
-
-if(percent < 70){
-
-percent = 70;
-
-}
-
-
-if(availability){
-
-availability.style.width = percent+"%";
-
-}
-
-
-},3000);
-
-
-
-
-
-// AI online animation
-
-
-const status = document.querySelector(".ai-status p");
-
-
-let dots = 0;
-
-
-setInterval(()=>{
-
-
-dots++;
-
-
-if(dots > 3){
-
-dots = 0;
-
-}
-
-
-if(status){
-
-status.innerHTML =
-
-"🤖 AI System Online" + ".".repeat(dots);
-
-}
-
-
-},700);
-
