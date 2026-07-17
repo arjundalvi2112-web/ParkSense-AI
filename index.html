@@ -1,1797 +1,222 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>AI Parking Finder | Smart Parking Solution</title>
+    <title>AI Parking Finder</title>
 
-<link rel="stylesheet" href="style.css">
-
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-
+    <link rel="stylesheet" href="style.css">
 </head>
-
 
 <body>
 
-
 <!-- NAVBAR -->
-
 <header>
+    <div class="logo-area">
+        <img src="logo.png" alt="AI Parking Finder Logo">
+        <h1>AI Parking Finder</h1>
+    </div>
 
-<nav class="navbar">
-
-<div class="logo">
-
-<img src="logo.png" alt="AI Parking Finder Logo">
-
-<h2>
-AI Parking Finder
-</h2>
-
-</div>
-
-
-<ul class="nav-links">
-
-<li><a href="#home">Home</a></li>
-
-<li><a href="#features">Features</a></li>
-
-<li><a href="#parking">Parking</a></li>
-
-<li><a href="#about">About</a></li>
-
-<li><a href="#contact">Contact</a></li>
-
-</ul>
-
-
-<button class="login-btn">
-Login
-</button>
-
-
-</nav>
-
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#features">Features</a>
+        <a href="#how">How It Works</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
 </header>
 
 
-
-
 <!-- HERO SECTION -->
+<section id="home" class="hero">
 
+    <div class="hero-text">
 
-<section class="hero" id="home">
+        <h2>
+            Find Parking Smarter
+            With Artificial Intelligence
+        </h2>
 
+        <p>
+            AI Parking Finder helps drivers locate available
+            parking spaces instantly using AI predictions,
+            live parking data and smart navigation.
+        </p>
 
-<div class="hero-content">
+        <button>
+            Find Parking Now
+        </button>
 
+    </div>
 
-<h1>
-Find Parking
-<br>
 
-<span>
-Powered By AI
-</span>
+    <div class="hero-image">
 
-</h1>
+        <img src="parking-ai.png" 
+        alt="AI Parking">
 
-
-<p>
-
-AI Parking Finder helps you locate available parking spaces
-in real-time using artificial intelligence, GPS and smart predictions.
-
-</p>
-
-
-<div class="hero-buttons">
-
-<button class="primary-btn">
-Find Parking Now
-</button>
-
-
-<button class="secondary-btn">
-Explore Features
-</button>
-
-</div>
-
-
-
-<div class="stats">
-
-
-<div class="stat-box">
-
-<h2>
-5000+
-</h2>
-
-<p>
-Happy Users
-</p>
-
-</div>
-
-
-
-<div class="stat-box">
-
-<h2>
-100+
-</h2>
-
-<p>
-Parking Spots
-</p>
-
-</div>
-
-
-
-<div class="stat-box">
-
-<h2>
-99%
-</h2>
-
-<p>
-Accuracy
-</p>
-
-</div>
-
-
-
-</div>
-
-
-
-</div>
-
-
-
-
-
-<div class="hero-image">
-
-
-<div class="ai-circle">
-
-<div class="pulse"></div>
-
-
-<h3>
-AI
-</h3>
-
-
-</div>
-
-
-
-<div class="car-card">
-
-
-<div class="car-icon">
-🚗
-</div>
-
-
-<h3>
-Parking Found
-</h3>
-
-
-<p>
-120 meters away
-</p>
-
-
-</div>
-
-
-
-</div>
-
-
+    </div>
 
 </section>
 
 
 
+<!-- FEATURES SECTION -->
 
+<section id="features">
 
-<!-- SEARCH BOX -->
-
-
-<section class="search-section">
-
-
-<div class="search-box">
-
-
-<h2>
-Search Nearby Parking
-</h2>
-
-
-<div class="search-input">
-
-
-<input 
-type="text"
-placeholder="Enter your location..."
->
-
-
-<button>
-Search
-</button>
-
-
-</div>
-
-
-</div>
-
-
-</section>
-
-
-
-
-
-<!-- FEATURES START -->
-
-
-<section class="features" id="features">
-
-
-<h1>
+<h2 class="title">
 Smart Features
-</h1>
-
-
-<p>
-Everything you need for stress-free parking.
-</p>
+</h2>
 
 
 <div class="feature-container">
 
 
-
 <div class="feature-card">
 
-
-<div class="icon">
-🤖
-</div>
-
-
-<h2>
-AI Prediction
-</h2>
-
+<h3>
+🤖 AI Prediction
+</h3>
 
 <p>
-Predict parking availability before reaching your destination.
+Predicts parking availability before
+you reach your destination.
 </p>
 
-
 </div>
-
-
 
 
 
 <div class="feature-card">
 
-
-<div class="icon">
-📍
-</div>
-
-
-<h2>
-Live Location
-</h2>
-
+<h3>
+📍 Live Parking Data
+</h3>
 
 <p>
-Find nearby parking spaces using GPS technology.
+Shows real-time parking spaces
+near your location.
 </p>
 
-
 </div>
-
-
 
 
 
 <div class="feature-card">
 
-
-<div class="icon">
-⚡
-</div>
-
-
-<h2>
-Smart Routing
-</h2>
-
-
-<p>
-Get the fastest route to available parking.
-</p>
-
-
-</div>
-
-
-
-</div>
-  <!-- PARKING SECTION -->
-
-<section class="parking-section" id="parking">
-
-
-<h1>
-Available Parking Spots
-</h1>
-
-
-<p>
-AI detected nearby parking locations
-</p>
-
-
-
-<div class="parking-container">
-
-
-
-<div class="parking-card">
-
-
-<div class="parking-image">
-
-🚘
-
-</div>
-
-
-<h2>
-City Mall Parking
-</h2>
-
-
-<p>
-📍 200 meters away
-</p>
-
-
-<div class="availability">
-
-<span>
-Available
-</span>
-
-</div>
-
-
 <h3>
-₹40/hour
+🚗 Smart Routes
 </h3>
 
-
-<button>
-Book Now
-</button>
-
-
-</div>
-
-
-
-
-
-<div class="parking-card">
-
-
-<div class="parking-image">
-
-🏢
-
-</div>
-
-
-<h2>
-Metro Station Parking
-</h2>
-
-
 <p>
-📍 500 meters away
+Suggests the fastest route
+with available parking.
 </p>
 
-
-<div class="availability">
-
-<span>
-Available
-</span>
-
-</div>
-
-
-<h3>
-₹30/hour
-</h3>
-
-
-<button>
-Book Now
-</button>
-
-
 </div>
 
 
 
-
-
-<div class="parking-card">
-
-
-<div class="parking-image">
-
-🏬
-
 </div>
-
-
-<h2>
-Business Hub Parking
-</h2>
-
-
-<p>
-📍 750 meters away
-</p>
-
-
-<div class="availability busy">
-
-<span>
-Almost Full
-</span>
-
-</div>
-
-
-<h3>
-₹50/hour
-</h3>
-
-
-<button>
-Book Now
-</button>
-
-
-</div>
-
-
-
-
-</div>
-
 
 </section>
 
 
 
 
+<!-- HOW IT WORKS -->
+
+<section id="how">
+
+<h2 class="title">
+How It Works
+</h2>
 
 
-
-<!-- AI MAP SECTION -->
-
-
-<section class="map-section">
+<div class="steps">
 
 
-<div class="map-content">
+<div class="step">
 
-
-<h1>
-AI Smart Parking Map
-</h1>
-
+<h3>1</h3>
 
 <p>
-
-Our intelligent system analyses traffic,
-parking history and user activity to suggest
-the best parking location.
-
+Open the AI Parking Finder app.
 </p>
 
+</div>
 
 
-<ul>
+<div class="step">
 
-<li>
-✔ Real-time parking updates
-</li>
+<h3>2</h3>
 
-
-<li>
-✔ Traffic prediction
-</li>
-
-
-<li>
-✔ Route optimization
-</li>
-
-
-<li>
-✔ Digital payments
-</li>
-
-
-</ul>
-
-
-
-<button class="primary-btn">
-Open Smart Map
-</button>
-
+<p>
+Select your destination.
+</p>
 
 </div>
 
 
+<div class="step">
 
+<h3>3</h3>
 
-<div class="map-box">
+<p>
+AI finds the best parking spot.
+</p>
 
-
-<div class="road road1"></div>
-
-<div class="road road2"></div>
-
-<div class="road road3"></div>
-
-
-
-<div class="location-pin pin1">
-📍
 </div>
 
 
-<div class="location-pin pin2">
-📍
-</div>
+<div class="step">
 
+<h3>4</h3>
 
-<div class="location-pin pin3">
-📍
-</div>
+<p>
+Navigate and park easily.
+</p>
 
-
-
-<div class="car car1">
-🚗
-</div>
-
-
-<div class="car car2">
-🚙
 </div>
 
 
 </div>
-
 
 </section>
-
-
-
-
-
 
 
 
 <!-- ABOUT SECTION -->
 
+<section id="about">
 
-<section class="about" id="about">
-
-
-<div class="about-image">
-
-
-<div class="ai-box">
-
-<h2>
-AI+
-</h2>
-
-<p>
-Parking Intelligence
-</p>
-
-</div>
-
-
-</div>
-
-
-
-
-<div class="about-content">
-
-
-<h1>
+<h2 class="title">
 About AI Parking Finder
-</h1>
-
-
-
-<p>
-
-AI Parking Finder is a next-generation smart parking
-solution designed to reduce traffic congestion and save
-valuable time.
-
-</p>
-
-
-
-<p>
-
-Using artificial intelligence, GPS and real-time data,
-our platform helps drivers find the perfect parking spot
-before they even reach their destination.
-
-</p>
-
-
-
-<div class="about-points">
-
-
-<div>
-⭐ AI Powered System
-</div>
-
-
-<div>
-⭐ Faster Parking Experience
-</div>
-
-
-<div>
-⭐ Eco Friendly Solution
-</div>
-
-
-</div>
-
-
-
-</div>
-
-
-
-</section>
-  <!-- SERVICES SECTION -->
-
-<section class="services">
-
-<h1>
-Why Choose AI Parking Finder?
-</h1>
-
-<p>
-Advanced technology for a smarter parking future.
-</p>
-
-
-<div class="service-grid">
-
-
-<div class="service-box">
-
-<div class="service-icon">
-🧠
-</div>
-
-<h2>
-Artificial Intelligence
 </h2>
 
-<p>
-Our AI system studies parking patterns and predicts
-availability before you arrive.
+
+<p class="about-text">
+
+AI Parking Finder is a smart parking
+solution designed to reduce traffic,
+save fuel and make city parking easier.
+
+Using Artificial Intelligence,
+GPS technology and real-time data,
+it helps users find parking spaces
+quickly and efficiently.
+
 </p>
-
-</div>
-
-
-
-
-<div class="service-box">
-
-<div class="service-icon">
-🌐
-</div>
-
-<h2>
-Real Time Data
-</h2>
-
-<p>
-Get live updates from connected parking locations
-around your city.
-</p>
-
-</div>
-
-
-
-
-<div class="service-box">
-
-<div class="service-icon">
-🔒
-</div>
-
-<h2>
-Secure Booking
-</h2>
-
-<p>
-Reserve your parking slot safely with digital payments.
-</p>
-
-</div>
-
-
-
-
-<div class="service-box">
-
-<div class="service-icon">
-📱
-</div>
-
-<h2>
-Mobile Friendly
-</h2>
-
-<p>
-Access parking information anywhere anytime.
-</p>
-
-</div>
-
-
-</div>
 
 </section>
 
 
 
-
-
-
-
-<!-- PROCESS SECTION -->
-
-
-<section class="process">
-
-
-<h1>
-How It Works
-</h1>
-
-
-<div class="process-container">
-
-
-
-<div class="step">
-
-
-<div class="number">
-01
-</div>
-
-
-<h2>
-Search Location
-</h2>
-
-
-<p>
-Enter your destination and find nearby parking areas.
-</p>
-
-
-</div>
-
-
-
-
-<div class="step">
-
-
-<div class="number">
-02
-</div>
-
-
-<h2>
-AI Analysis
-</h2>
-
-
-<p>
-Our AI checks availability, distance and traffic.
-</p>
-
-
-</div>
-
-
-
-
-<div class="step">
-
-
-<div class="number">
-03
-</div>
-
-
-<h2>
-Book Slot
-</h2>
-
-
-<p>
-Select your preferred parking space instantly.
-</p>
-
-
-</div>
-
-
-
-
-<div class="step">
-
-
-<div class="number">
-04
-</div>
-
-
-<h2>
-Park Easily
-</h2>
-
-
-<p>
-Follow navigation and enjoy stress-free parking.
-</p>
-
-
-</div>
-
-
-
-</div>
-
-
-</section>
-
-
-
-
-
-
-
-
-<!-- PRICING SECTION -->
-
-
-<section class="pricing">
-
-
-<h1>
-Simple Pricing Plans
-</h1>
-
-
-<p>
-Choose the plan that fits your parking needs.
-</p>
-
-
-
-<div class="pricing-container">
-
-
-
-
-
-<div class="price-card">
-
-
-<h2>
-Basic
-</h2>
-
-
-<h1>
-₹0
-</h1>
-
-
-<p>
-Free Forever
-</p>
-
-
-<ul>
-
-<li>
-✔ Search Parking
-</li>
-
-<li>
-✔ Basic Navigation
-</li>
-
-<li>
-✔ Limited AI Suggestions
-</li>
-
-</ul>
-
-
-<button>
-Get Started
-</button>
-
-
-</div>
-
-
-
-
-
-
-
-<div class="price-card popular">
-
-
-<div class="badge">
-POPULAR
-</div>
-
-
-<h2>
-Smart
-</h2>
-
-
-<h1>
-₹99
-</h1>
-
-
-<p>
-Per Month
-</p>
-
-
-<ul>
-
-<li>
-✔ Unlimited Search
-</li>
-
-<li>
-✔ AI Predictions
-</li>
-
-<li>
-✔ Priority Booking
-</li>
-
-<li>
-✔ Digital Payments
-</li>
-
-</ul>
-
-
-<button>
-Choose Plan
-</button>
-
-
-</div>
-
-
-
-
-
-
-
-<div class="price-card">
-
-
-<h2>
-Business
-</h2>
-
-
-<h1>
-₹499
-</h1>
-
-
-<p>
-Per Month
-</p>
-
-
-<ul>
-
-<li>
-✔ Parking Management
-</li>
-
-<li>
-✔ Analytics Dashboard
-</li>
-
-<li>
-✔ Multiple Locations
-</li>
-
-</ul>
-
-
-<button>
-Contact Us
-</button>
-
-
-</div>
-
-
-
-
-</div>
-
-
-</section>
-
-
-
-
-
-
-
-
-<!-- TESTIMONIAL SECTION -->
-
-
-<section class="reviews">
-
-
-<h1>
-What Users Say
-</h1>
-
-
-<div class="review-container">
-
-
-
-<div class="review-card">
-
-
-<div class="profile">
-👨
-</div>
-
-
-<h2>
-Rahul Sharma
-</h2>
-
-
-<div class="stars">
-⭐⭐⭐⭐⭐
-</div>
-
-
-<p>
-
-"AI Parking Finder saved me 20 minutes every day.
-Finding parking is now simple."
-
-</p>
-
-
-</div>
-
-
-
-
-
-<div class="review-card">
-
-
-<div class="profile">
-👩
-</div>
-
-
-<h2>
-Priya Mehta
-</h2>
-
-
-<div class="stars">
-⭐⭐⭐⭐⭐
-</div>
-
-
-<p>
-
-"The AI prediction feature is amazing.
-I know where parking is available before reaching."
-
-</p>
-
-
-</div>
-
-
-
-
-
-<div class="review-card">
-
-
-<div class="profile">
-👨
-</div>
-
-
-<h2>
-Amit Patil
-</h2>
-
-
-<div class="stars">
-⭐⭐⭐⭐
-</div>
-
-
-<p>
-
-"Very useful app for crowded cities.
-The smart routes save a lot of time."
-
-</p>
-
-
-</div>
-
-
-
-</div>
-
-
-</section>
-
-
-
-
-
-
-
-<!-- APP DOWNLOAD SECTION -->
-
-
-<section class="download">
-
-
-<div class="download-content">
-
-
-<h1>
-Parking In Your Pocket
-</h1>
-
-
-<p>
-
-Download AI Parking Finder and experience
-the future of smart mobility.
-
-</p>
-
-
-<button>
-Download App
-</button>
-
-
-</div>
-
-
-
-<div class="phone">
-
-
-<div class="screen">
-
-
-<h2>
-AI Parking
-</h2>
-
-
-<div class="mini-map">
-📍🚗📍
-</div>
-
-
-<p>
-Parking Found
-</p>
-
-
-</div>
-
-
-</div>
-
-
-
-</section>
-  <!-- CONTACT SECTION -->
-
-<section class="contact" id="contact">
-
-
-<div class="contact-container">
-
-
-<div class="contact-info">
-
-
-<h1>
-Contact AI Parking Finder
-</h1>
-
-
-<p>
-Have questions or want to partner with us?
-Our team is ready to help.
-</p>
-
-
-
-<div class="contact-item">
-
-<span>
-📧
-</span>
-
-<p>
-support@aiparkingfinder.com
-</p>
-
-</div>
-
-
-
-
-<div class="contact-item">
-
-<span>
-📞
-</span>
-
-<p>
-+91 98765 43210
-</p>
-
-</div>
-
-
-
-
-<div class="contact-item">
-
-<span>
-📍
-</span>
-
-<p>
-Smart City Innovation Hub
-</p>
-
-</div>
-
-
-
-</div>
-
-
-
-
-
-<div class="contact-form">
-
-
-<input 
-type="text"
-placeholder="Your Name"
->
-
-
-
-<input 
-type="email"
-placeholder="Your Email"
->
-
-
-
-<input 
-type="text"
-placeholder="Phone Number"
->
-
-
-
-<textarea 
-placeholder="Your Message">
-</textarea>
-
-
-
-<button>
-Send Message
-</button>
-
-
-</div>
-
-
-
-</div>
-
-
-</section>
-
-
-
-
-
-
-
-
-
-<!-- FAQ SECTION -->
-
-
-<section class="faq">
-
-
-<h1>
-Frequently Asked Questions
-</h1>
-
-
-
-<div class="faq-container">
-
-
-
-<div class="faq-box">
-
-
-<h2>
-How does AI Parking Finder work?
-</h2>
-
-
-<p>
-
-The app uses AI, GPS and parking data to
-find available parking spaces near you.
-
-</p>
-
-
-</div>
-
-
-
-
-
-
-<div class="faq-box">
-
-
-<h2>
-Can I reserve a parking spot?
-</h2>
-
-
-<p>
-
-Yes, users can book available parking spaces
-through the application.
-
-</p>
-
-
-</div>
-
-
-
-
-
-
-
-<div class="faq-box">
-
-
-<h2>
-Does it work in cities?
-</h2>
-
-
-<p>
-
-Yes, it is designed especially for crowded
-urban areas.
-
-</p>
-
-
-</div>
-
-
-
-
-
-
-<div class="faq-box">
-
-
-<h2>
-Is payment secure?
-</h2>
-
-
-<p>
-
-All payments are protected using secure
-digital payment systems.
-
-</p>
-
-
-</div>
-
-
-
-</div>
-
-
-</section>
-
-
-
-
-
-
-
-
-<!-- AI CHATBOT -->
-
-
-<div class="chatbot">
-
-
-<div class="chat-header">
-
-🤖 AI Assistant
-
-</div>
-
-
-
-<div class="chat-body">
-
-
-<p>
-Hello! 👋
-</p>
-
-
-<p>
-Need help finding parking?
-</p>
-
-
-</div>
-
-
-
-<div class="chat-input">
-
-
-<input 
-placeholder="Ask something..."
->
-
-
-<button>
-➤
-</button>
-
-
-</div>
-
-
-
-</div>
-
-
-
-
-
-
-
-
-
-<!-- LOGIN POPUP -->
-
-
-<div class="login-popup" id="loginPopup">
-
-
-<div class="login-box">
-
-
-<span class="close">
-×
-</span>
-
-
-<h1>
-Welcome Back
-</h1>
-
-
-
-<input 
-type="email"
-placeholder="Email"
->
-
-
-
-<input 
-type="password"
-placeholder="Password"
->
-
-
-
-<button>
-Login
-</button>
-
-
-
-<p>
-Don't have an account?
-<a href="#">
-Register
-</a>
-</p>
-
-
-
-</div>
-
-
-</div>
-
-
-
-
-
-
-
-
-<!-- FOOTER -->
-
-
-<footer>
-
-
-<div class="footer-container">
-
-
-<div class="footer-logo">
-
-
-<img src="logo.png">
-
-
-<h2>
-AI Parking Finder
-</h2>
-
-
-<p>
-Smart parking powered by artificial intelligence.
-</p>
-
-
-</div>
-
-
-
-
-
-
-<div class="footer-links">
-
-
-<h2>
-Quick Links
-</h2>
-
-
-<a href="#home">
-Home
-</a>
-
-
-<a href="#features">
-Features
-</a>
-
-
-<a href="#parking">
-Parking
-</a>
-
-
-<a href="#contact">
-Contact
-</a>
-
-
-</div>
-
-
-
-
-
-
-
-<div class="footer-links">
-
-
-<h2>
-Social
-</h2>
-
-
-<a href="#">
-Instagram
-</a>
-
-
-<a href="#">
-LinkedIn
-</a>
-
-
-<a href="#">
-Twitter
-</a>
-
-
-<a href="#">
-Facebook
-</a>
-
-
-</div>
-
-
-
-
-</div>
-
-
-
-
-
-<div class="copyright">
-
-
-<p>
-© 2026 AI Parking Finder. All Rights Reserved.
-</p>
-
-
-</div>
-
-
-
-</footer>
-
-
-
-
-
-
-
-
-<!-- BACK TO TOP BUTTON -->
-
-
-<button class="top-btn">
-
-↑
-
-</button>
-
-
-
-
+<!-- JAVASCRIPT -->
 
 <script src="script.js"></script>
 
-
 </body>
-
-
 </html>
-
-
-
-</section>
