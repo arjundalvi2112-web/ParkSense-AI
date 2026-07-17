@@ -885,3 +885,42 @@ cursor:pointer;
 box-shadow:0 10px 20px rgba(0,0,0,.2);
 
 }
+/* ==========================
+   ACHIEVEMENTS
+========================== */
+
+#achievements{
+    padding:80px 40px;
+    background:#ffffff;
+}
+
+.achievement-container{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:25px;
+}
+
+.achievement-card{
+    width:240px;
+    padding:30px;
+    background:#f5f9ff;
+    border-radius:20px;
+    text-align:center;
+    box-shadow:0 10px 25px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+.achievement-card:hover{
+    transform:translateY(-10px);
+}
+
+.achievement-card h3{
+    color:#0066ff;
+    font-size:30px;
+    margin-bottom:10px;
+}
+
+.achievement-card p{
+    color:#555;
+}
