@@ -1,74 +1,169 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ParkSense AI | Coming Soon</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Tailwind CSS -->
-  <script src="https://cdn.tailwindcss.com"></script>
+<title>ParkSense AI | Coming Soon</title>
 
-  <!-- Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
 
-  <!-- Font Awesome -->
-  <link rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
-  <style>
-    body{
-      font-family:'Poppins',sans-serif;
-      background:#050816;
-    }
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
 
-    .glow{
-      box-shadow:0 0 30px rgba(37,99,235,.35);
-    }
+<style>
 
-    .card{
-      background:rgba(255,255,255,.06);
-      backdrop-filter:blur(12px);
-      border:1px solid rgba(255,255,255,.08);
-    }
-  </style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#050816;
+color:white;
+overflow-x:hidden;
+}
+
+body::before{
+content:"";
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:
+radial-gradient(circle at top left,#2563eb22,transparent 35%),
+radial-gradient(circle at bottom right,#1e40af22,transparent 35%);
+z-index:-1;
+}
+
+.glass{
+background:rgba(255,255,255,.05);
+backdrop-filter:blur(15px);
+border:1px solid rgba(255,255,255,.08);
+box-shadow:0 0 25px rgba(37,99,235,.15);
+}
+
+.hero-btn{
+transition:.35s;
+}
+
+.hero-btn:hover{
+transform:translateY(-4px);
+box-shadow:0 10px 25px rgba(37,99,235,.4);
+}
+
+.icon-box:hover{
+transform:translateY(-8px);
+transition:.35s;
+}
+
+.logo{
+animation:float 5s ease-in-out infinite;
+}
+
+@keyframes float{
+
+0%{
+transform:translateY(0px);
+}
+
+50%{
+transform:translateY(-12px);
+}
+
+100%{
+transform:translateY(0px);
+}
+
+}
+
+</style>
 
 </head>
 
-<body class="text-white">
+<body>
+
+<!-- NAVBAR -->
+
+<nav class="fixed top-0 left-0 w-full bg-black/60 backdrop-blur-xl border-b border-blue-900 z-50">
+
+<div class="max-w-7xl mx-auto flex justify-between items-center px-8 py-5">
+
+<div class="flex items-center gap-4">
+
+<img src="logo.png" class="h-12">
+
+<h2 class="text-2xl font-bold">
+
+Park<span class="text-blue-500">Sense AI</span>
+
+</h2>
+
+</div>
+
+<div class="hidden md:flex gap-10 text-lg">
+
+<a href="#story" class="hover:text-blue-400">Our Story</a>
+
+<a href="#works" class="hover:text-blue-400">How it Works</a>
+
+<a href="#contact" class="hover:text-blue-400">Contact</a>
+
+</div>
+
+</div>
+
+</nav>
 
 <!-- HERO -->
 
-<section class="min-h-screen flex items-center justify-center px-6">
+<section class="min-h-screen flex items-center justify-center px-8">
 
-<div class="max-w-7xl w-full grid lg:grid-cols-2 gap-12 items-center">
+<div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center">
 
 <div>
 
-<span class="bg-blue-600 px-4 py-2 rounded-full text-sm font-semibold">
+<span class="bg-blue-600 px-5 py-2 rounded-full font-semibold">
+
 🚀 COMING SOON
+
 </span>
 
-<h1 class="text-6xl font-extrabold mt-6 leading-tight">
+<h1 class="text-6xl font-extrabold mt-8">
+
 Park<span class="text-blue-500">Sense AI</span>
+
 </h1>
 
-<p class="text-xl text-gray-300 mt-6 leading-9">
+<h3 class="text-2xl mt-5 text-blue-400 font-semibold">
 
-ParkSense AI is an AI-powered smart parking platform that helps drivers quickly find available parking spaces using real-time data, intelligent prediction, and smart navigation. Save time, reduce fuel consumption, and make city parking effortless.
+Find Smart. Park Easy.
+
+</h3>
+
+<p class="text-gray-300 mt-8 leading-9 text-lg">
+
+ParkSense AI is an AI-powered parking finder that helps drivers locate available parking spaces in real time. Using AI prediction, GPS navigation, and smart recommendations, our app saves time, reduces fuel consumption, and makes city parking easier than ever.
 
 </p>
 
-<div class="mt-10 flex gap-5">
+<div class="mt-10 flex gap-6">
 
 <a href="#subscribe"
-class="bg-blue-600 hover:bg-blue-700 px-8 py-4 rounded-xl font-semibold transition">
+class="hero-btn bg-blue-600 px-8 py-4 rounded-xl font-semibold">
 
 Notify Me
 
 </a>
 
 <a href="#story"
-class="border border-blue-500 hover:bg-blue-600 px-8 py-4 rounded-xl font-semibold transition">
+class="hero-btn border border-blue-500 px-8 py-4 rounded-xl">
 
 Learn More
 
@@ -76,29 +171,53 @@ Learn More
 
 </div>
 
-<div class="flex gap-10 mt-10">
+<div class="grid grid-cols-3 gap-8 mt-12">
 
 <div>
 
-<h2 class="text-4xl font-bold text-blue-400">AI</h2>
+<h2 class="text-4xl font-bold text-blue-400">
 
-<p class="text-gray-400">Powered</p>
+AI
+
+</h2>
+
+<p class="text-gray-400">
+
+Powered
+
+</p>
 
 </div>
 
 <div>
 
-<h2 class="text-4xl font-bold text-blue-400">24/7</h2>
+<h2 class="text-4xl font-bold text-blue-400">
 
-<p class="text-gray-400">Smart Parking</p>
+24/7
+
+</h2>
+
+<p class="text-gray-400">
+
+Availability
+
+</p>
 
 </div>
 
 <div>
 
-<h2 class="text-4xl font-bold text-blue-400">Fast</h2>
+<h2 class="text-4xl font-bold text-blue-400">
 
-<p class="text-gray-400">Navigation</p>
+Fast
+
+</h2>
+
+<p class="text-gray-400">
+
+Navigation
+
+</p>
 
 </div>
 
@@ -108,27 +227,9 @@ Learn More
 
 <div class="flex justify-center">
 
-<div class="card glow rounded-3xl p-10">
+<img src="logo.png"
 
-<i class="fa-solid fa-square-parking text-blue-500 text-[170px]"></i>
-
-<div class="text-center mt-6">
-
-<h2 class="text-3xl font-bold">
-
-Find Smart.
-
-</h2>
-
-<h2 class="text-3xl font-bold text-blue-500">
-
-Park Easy.
-
-</h2>
-
-</div>
-
-</div>
+class="logo w-full max-w-xl drop-shadow-2xl">
 
 </div>
 
@@ -138,21 +239,25 @@ Park Easy.
 
 <!-- OUR STORY -->
 
-<section id="story" class="py-20 px-6">
+<section id="story" class="py-24 px-8">
 
 <div class="max-w-6xl mx-auto">
 
-<h2 class="text-4xl font-bold text-center">
+<h2 class="text-5xl font-bold text-center">
 
 Our Story
 
 </h2>
 
-<div class="card rounded-3xl p-10 mt-10">
+<div class="glass rounded-3xl p-12 mt-12">
 
-<p class="text-lg leading-9 text-gray-300">
+<p class="text-lg text-gray-300 leading-10">
 
-Hi, I'm <b>Arjun Dalvi</b>, the student founder of <span class="text-blue-400 font-semibold">ParkSense AI</span>. I noticed how much time drivers waste searching for parking in busy cities. This inspired me to build an AI-powered solution that predicts available parking spaces, guides users efficiently, and reduces traffic congestion while making parking smarter and faster.
+Hi, I'm <span class="text-blue-400 font-semibold">Arjun Dalvi</span>, a
+<b>Class 7</b> student at
+<b>MIS International School, Pune</b>.
+
+I founded <span class="text-blue-400">ParkSense AI</span> after noticing how difficult it is for drivers to find parking in busy cities. My goal is to build an AI-powered solution that helps people find parking faster, reduce traffic congestion, save fuel, and make smart parking accessible for everyone.
 
 </p>
 
@@ -161,66 +266,105 @@ Hi, I'm <b>Arjun Dalvi</b>, the student founder of <span class="text-blue-400 fo
 </div>
 
 </section>
+  <!-- HOW IT WORKS -->
 
-<!-- HOW IT WORKS -->
+<section id="works" class="py-24 px-8 bg-black/20">
 
-<section class="py-20 px-6 bg-black/30">
+<div class="max-w-7xl mx-auto">
 
-<div class="max-w-6xl mx-auto">
-
-<h2 class="text-4xl font-bold text-center">
+<h2 class="text-5xl font-bold text-center mb-16">
 
 How It Works
 
 </h2>
 
-<div class="grid md:grid-cols-4 gap-8 mt-14">
+<div class="grid md:grid-cols-4 gap-8">
 
-<div class="card rounded-3xl p-8 text-center">
+<div class="glass rounded-3xl p-8 text-center icon-box">
 
-<i class="fa-solid fa-location-dot text-5xl text-blue-500"></i>
+<div class="w-20 h-20 mx-auto rounded-full bg-blue-600 flex items-center justify-center">
 
-<h3 class="mt-5 font-bold text-xl">
+<i class="fa-solid fa-location-dot text-3xl"></i>
+
+</div>
+
+<h3 class="text-2xl font-semibold mt-8">
 
 Enter Destination
 
 </h3>
 
+<p class="text-gray-400 mt-4">
+
+Search where you want to park.
+
+</p>
+
 </div>
 
-<div class="card rounded-3xl p-8 text-center">
+<div class="glass rounded-3xl p-8 text-center icon-box">
 
-<i class="fa-solid fa-brain text-5xl text-blue-500"></i>
+<div class="w-20 h-20 mx-auto rounded-full bg-blue-600 flex items-center justify-center">
 
-<h3 class="mt-5 font-bold text-xl">
+<i class="fa-solid fa-brain text-3xl"></i>
 
-AI Finds Parking
+</div>
+
+<h3 class="text-2xl font-semibold mt-8">
+
+AI Prediction
 
 </h3>
 
+<p class="text-gray-400 mt-4">
+
+Artificial Intelligence predicts available parking.
+
+</p>
+
 </div>
 
-<div class="card rounded-3xl p-8 text-center">
+<div class="glass rounded-3xl p-8 text-center icon-box">
 
-<i class="fa-solid fa-route text-5xl text-blue-500"></i>
+<div class="w-20 h-20 mx-auto rounded-full bg-blue-600 flex items-center justify-center">
 
-<h3 class="mt-5 font-bold text-xl">
+<i class="fa-solid fa-route text-3xl"></i>
 
-Navigate
+</div>
+
+<h3 class="text-2xl font-semibold mt-8">
+
+Smart Navigation
 
 </h3>
 
+<p class="text-gray-400 mt-4">
+
+Get the fastest route to your parking spot.
+
+</p>
+
 </div>
 
-<div class="card rounded-3xl p-8 text-center">
+<div class="glass rounded-3xl p-8 text-center icon-box">
 
-<i class="fa-solid fa-car-side text-5xl text-blue-500"></i>
+<div class="w-20 h-20 mx-auto rounded-full bg-blue-600 flex items-center justify-center">
 
-<h3 class="mt-5 font-bold text-xl">
+<i class="fa-solid fa-square-parking text-3xl"></i>
+
+</div>
+
+<h3 class="text-2xl font-semibold mt-8">
 
 Park Easily
 
 </h3>
+
+<p class="text-gray-400 mt-4">
+
+Reach your parking space quickly and safely.
+
+</p>
 
 </div>
 
@@ -230,49 +374,73 @@ Park Easily
 
 </section>
 
-<!-- CONTACT -->
 
-<section class="py-20 px-6">
 
-<div class="max-w-6xl mx-auto">
 
-<h2 class="text-4xl font-bold text-center">
 
-Contact
+<!-- FEATURES -->
+
+<section class="py-24 px-8">
+
+<div class="max-w-7xl mx-auto">
+
+<h2 class="text-5xl font-bold text-center mb-16">
+
+Why ParkSense AI?
 
 </h2>
 
-<div class="grid md:grid-cols-2 gap-10 mt-12">
+<div class="grid md:grid-cols-3 gap-8">
 
-<div class="card rounded-3xl p-10">
+<div class="glass rounded-3xl p-8">
 
-<h3 class="text-2xl font-bold">
+<i class="fa-solid fa-clock text-5xl text-blue-500"></i>
 
-Let's Connect
+<h3 class="text-2xl font-semibold mt-6">
+
+Save Time
 
 </h3>
 
-<p class="text-gray-300 mt-6">
+<p class="text-gray-400 mt-4">
 
-Have questions or partnership opportunities?
-
-</p>
-
-<div class="mt-8 space-y-5">
-
-<p>
-
-<i class="fa-solid fa-envelope text-blue-500 mr-3"></i>
-
-parksenseai@gmail.com
+Spend less time searching for parking and more time reaching your destination.
 
 </p>
 
-<p>
+</div>
 
-<i class="fa-solid fa-location-dot text-blue-500 mr-3"></i>
+<div class="glass rounded-3xl p-8">
 
-India
+<i class="fa-solid fa-gas-pump text-5xl text-blue-500"></i>
+
+<h3 class="text-2xl font-semibold mt-6">
+
+Save Fuel
+
+</h3>
+
+<p class="text-gray-400 mt-4">
+
+Reduce unnecessary driving and fuel consumption.
+
+</p>
+
+</div>
+
+<div class="glass rounded-3xl p-8">
+
+<i class="fa-solid fa-city text-5xl text-blue-500"></i>
+
+<h3 class="text-2xl font-semibold mt-6">
+
+Smart Cities
+
+</h3>
+
+<p class="text-gray-400 mt-4">
+
+Reduce congestion and improve urban mobility with AI.
 
 </p>
 
@@ -280,31 +448,43 @@ India
 
 </div>
 
-<div id="subscribe" class="card rounded-3xl p-10">
+</div>
 
-<h3 class="text-2xl font-bold">
+</section>
 
-Get Notified
 
-</h3>
 
-<p class="text-gray-300 mt-5">
 
-Be the first to know when ParkSense AI launches.
+
+<!-- SUBSCRIBE -->
+
+<section id="subscribe" class="py-24 px-8 bg-gradient-to-r from-blue-900/20 to-black">
+
+<div class="max-w-3xl mx-auto text-center">
+
+<h2 class="text-5xl font-bold">
+
+Be the First to Know
+
+</h2>
+
+<p class="text-gray-400 mt-6 text-lg">
+
+Subscribe and we'll notify you when ParkSense AI launches.
 
 </p>
 
-<form class="mt-8">
+<form class="mt-10">
 
 <input
 type="email"
-placeholder="Enter your email"
-class="w-full p-4 rounded-xl bg-slate-900 border border-blue-500 outline-none mb-5">
+placeholder="Enter your Email Address"
+class="w-full p-5 rounded-xl bg-slate-900 border border-blue-500 outline-none">
 
 <button
-class="w-full bg-blue-600 hover:bg-blue-700 py-4 rounded-xl font-semibold">
+class="mt-6 bg-blue-600 hover:bg-blue-700 transition px-10 py-4 rounded-xl font-semibold">
 
-Notify Me
+Notify Me 🚀
 
 </button>
 
@@ -312,7 +492,207 @@ Notify Me
 
 </div>
 
+</section>
+  <!-- CONTACT -->
+
+<section id="contact" class="py-24 px-8">
+
+<div class="max-w-6xl mx-auto">
+
+<h2 class="text-5xl font-bold text-center mb-16">
+
+Contact Us
+
+</h2>
+
+<div class="grid md:grid-cols-2 gap-10">
+
+<!-- LEFT -->
+
+<div class="glass rounded-3xl p-10">
+
+<h3 class="text-3xl font-bold">
+
+Let's Connect 👋
+
+</h3>
+
+<p class="text-gray-400 mt-6 leading-8">
+
+Thank you for visiting ParkSense AI.
+
+We're building an AI-powered parking solution to make city parking faster, smarter, and stress-free.
+
+Feel free to contact us for collaborations, feedback, or suggestions.
+
+</p>
+
+<div class="space-y-6 mt-10">
+
+<div class="flex items-center gap-5">
+
+<div class="w-14 h-14 rounded-full bg-blue-600 flex items-center justify-center">
+
+<i class="fa-solid fa-envelope text-xl"></i>
+
 </div>
+
+<div>
+
+<p class="text-gray-400">
+
+Email
+
+</p>
+
+<p class="font-semibold">
+
+arjundalvi2112@gmail.com
+
+</p>
+
+</div>
+
+</div>
+
+<div class="flex items-center gap-5">
+
+<div class="w-14 h-14 rounded-full bg-blue-600 flex items-center justify-center">
+
+<i class="fa-solid fa-location-dot text-xl"></i>
+
+</div>
+
+<div>
+
+<p class="text-gray-400">
+
+Location
+
+</p>
+
+<p class="font-semibold">
+
+Pune, Maharashtra, India
+
+</p>
+
+</div>
+
+</div>
+
+<div class="flex items-center gap-5">
+
+<div class="w-14 h-14 rounded-full bg-blue-600 flex items-center justify-center">
+
+<i class="fa-solid fa-school text-xl"></i>
+
+</div>
+
+<div>
+
+<p class="text-gray-400">
+
+School
+
+</p>
+
+<p class="font-semibold">
+
+MIS International School
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- RIGHT -->
+
+<div class="glass rounded-3xl p-10 text-center">
+
+<img src="logo.png"
+class="w-48 mx-auto mb-8">
+
+<h3 class="text-3xl font-bold">
+
+ParkSense AI
+
+</h3>
+
+<p class="text-gray-400 mt-6 leading-8">
+
+Helping drivers find parking with Artificial Intelligence.
+
+Saving time.
+
+Saving fuel.
+
+Building smarter cities.
+
+</p>
+
+<div class="flex justify-center gap-6 mt-10">
+
+<a href="#" class="w-14 h-14 rounded-full bg-blue-600 flex items-center justify-center hover:scale-110 duration-300">
+
+<i class="fab fa-instagram text-xl"></i>
+
+</a>
+
+<a href="#" class="w-14 h-14 rounded-full bg-blue-600 flex items-center justify-center hover:scale-110 duration-300">
+
+<i class="fab fa-linkedin text-xl"></i>
+
+</a>
+
+<a href="#" class="w-14 h-14 rounded-full bg-blue-600 flex items-center justify-center hover:scale-110 duration-300">
+
+<i class="fab fa-github text-xl"></i>
+
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- CALL TO ACTION -->
+
+<section class="py-24 px-8">
+
+<div class="max-w-5xl mx-auto glass rounded-3xl p-16 text-center">
+
+<h2 class="text-5xl font-bold">
+
+The Future of Parking Starts Here 🚗
+
+</h2>
+
+<p class="text-gray-400 text-lg mt-8 leading-9">
+
+ParkSense AI combines Artificial Intelligence, real-time parking detection, and smart navigation to create a seamless parking experience.
+
+Join us as we build the future of smart mobility.
+
+</p>
+
+<a href="#subscribe"
+
+class="inline-block mt-10 bg-blue-600 hover:bg-blue-700 transition px-10 py-5 rounded-xl text-lg font-semibold">
+
+Notify Me 🚀
+
+</a>
 
 </div>
 
@@ -320,11 +700,56 @@ Notify Me
 
 <!-- FOOTER -->
 
-<footer class="border-t border-gray-700 py-8 text-center text-gray-400">
+<footer class="border-t border-blue-900">
 
-© 2025 ParkSense AI • Find Smart. Park Easy.
+<div class="max-w-7xl mx-auto py-12 px-8">
+
+<div class="flex flex-col md:flex-row justify-between items-center">
+
+<div class="flex items-center gap-4">
+
+<img src="logo.png" class="h-14">
+
+<div>
+
+<h2 class="text-2xl font-bold">
+
+Park<span class="text-blue-500">Sense AI</span>
+
+</h2>
+
+<p class="text-gray-500">
+
+Find Smart. Park Easy.
+
+</p>
+
+</div>
+
+</div>
+
+<div class="mt-8 md:mt-0 text-center md:text-right">
+
+<p class="text-gray-500">
+
+© 2026 ParkSense AI. All Rights Reserved.
+
+</p>
+
+<p class="text-gray-600 mt-2">
+
+Designed & Developed by Arjun Dalvi
+
+</p>
+
+</div>
+
+</div>
+
+</div>
 
 </footer>
 
 </body>
+
 </html>
